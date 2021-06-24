@@ -1,0 +1,26 @@
+body {
+  font-size: 20px;
+}
+
+.btn {
+  background: #e31b23;
+  margin: 10px;
+}
+
+.add-btn {
+  background: lightblue;
+}
+.app-title {
+  text-align: center;
+  color: #282827;
+  font-size: 32px;
+}
+.container {
+  border: 3px solid #ebecf0;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 40%;
+  box-shadow: 1px 2px 2px 1px;
+}

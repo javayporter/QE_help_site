@@ -1,0 +1,40 @@
+/* .carousel-images {
+    height: 50%;
+    width: 50%;
+  } */
+
+.carousel-images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 26em;
+}
+
+.gray-text {
+  color: rgb(36, 36, 36);
+}
+
+.icon-link-images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-text {
+  font-size: 18px;
+}
+.spacing {
+  /* margin-top: -20%; */
+  margin-bottom: 1em;
+  background-image: url(https://picjumbo.com/wp-content/uploads/entrepreneur-working-on-his-macbook_5fd21ae04b030-2210x1473.jpg);
+  background-size: cover;
+}
+
+.icon-link-text {
+  margin-top: 1em;
+  text-align: center;
+}
+
+/* .float {
+float: left;
+} */
