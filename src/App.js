@@ -10,6 +10,7 @@ import { Layout, Header, Textfield, Navigation, Drawer } from "react-mdl";
 import { Link } from "react-router-dom";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
+import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 // import Footer from './Components/Footer';
 
 class JNavbar extends React.Component {
@@ -110,6 +111,7 @@ class App extends Component {
           </Navbar.Collapse>
         </Navbar>
         <Main />
+        <AmplifySignOut />
       </div>
 
       // Layout from react-mdl
@@ -148,4 +150,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withAuthenticator(App);

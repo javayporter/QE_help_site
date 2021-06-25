@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "qehelpsite76b2d761": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
