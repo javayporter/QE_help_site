@@ -6,7 +6,7 @@ import "./LandingPage.css";
 import { ApplicationCard } from "./Tools";
 
 // Consts //
-const welcome = "Welcome ";
+const welcome = "Welcome, ";
 const welcomeUser = String(welcome) + "Javay,";
 const welcomeMessage =
   "This is the QE Help Center! Here you'll find application setup guides, testing resources and much more. Click the icon to review the tool tips.";
@@ -43,7 +43,7 @@ class LandingPage extends Component {
         <Jumbotron className="spacing" style={{ height: "60%" }}>
           <Grid>
             <Cell col={6}>
-              <h1>{welcomeUser}</h1>
+              <h1>{welcome}</h1>
               <p className="welcome-text">{welcomeMessage}</p>
             </Cell>
           </Grid>
@@ -96,9 +96,9 @@ class LandingPage extends Component {
               </Card.Title>
             </Card.Body>
           </Card>
-        </CardGroup>
+          {/* </CardGroup>
 
-        <CardGroup>
+        <CardGroup> */}
           <Card>
             <Card.Body>
               <img

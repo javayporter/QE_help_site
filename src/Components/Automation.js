@@ -23,8 +23,13 @@ class Automation extends Component {
             <Tab>Mobile</Tab>
           </Tabs>
         </div>
+        <div style={{ marginLeft: "10%", marginTop: "5%" }}>
+          <h1 style={{ textAlign: "center" }}>It's great to automate!</h1>Just
+          add information about automation here like this. <br />
+          What you'll need <br />
+        </div>
 
-        <Grid className="demo-grid-1">
+        {/* <Grid className="demo-grid-1">
           <Cell className="rounded-border" col={6}>
             <h5>Creating an AL GitHub account</h5>
             <h6>
@@ -47,7 +52,7 @@ class Automation extends Component {
           </Cell>
 
           <Cell className="rounded-border" col={6}>
-            <h5>Download an IDLE</h5>
+            <h5>Download VS Studio Code</h5>
             <h6>
               <ul>{listCreateGitHubSteps}</ul>
             </h6>
@@ -66,7 +71,7 @@ class Automation extends Component {
               <ul>{listCreateGitHubSteps}</ul>
             </h6>
           </Cell>
-        </Grid>
+        </Grid> */}
       </div>
     );
   }

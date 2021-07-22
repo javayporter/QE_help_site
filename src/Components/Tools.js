@@ -96,7 +96,7 @@ class Applications extends Component {
   render() {
     return (
       <div>
-        <Grid>
+        {/* <Grid>
           <ApplicationCard app_name="Insomnia" desc={app_desc.descs[0]} />
           <ApplicationCard app_name="BloomRPC" desc={app_desc.descs[1]} />
           <ApplicationCard app_name="Insomnia" desc={app_desc.descs[2]} />
@@ -104,9 +104,337 @@ class Applications extends Component {
         </Grid>
 
         <SetupStepsModal app_name="Insomnia" />
-        <ApplicationCards />
+        <ApplicationCards /> */}
 
         <Grid>
+          <Cell col={3} style={{ paddingRight: "100px" }}>
+            <Card shadow={0} style={{ width: "265px", margin: "auto" }}>
+              <CardTitle
+                style={{
+                  color: "#000",
+                  height: "275px",
+                  background:
+                    "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
+                }}
+              >
+                Insomnia
+              </CardTitle>
+              <CardText>
+                <div className="modal-background">
+                  <button>Description of application</button>
+                  <button>Setup Steps</button>
+                </div>
+              </CardText>
+              <CardActions border>
+                <a
+                  href="https://github.com/javayporter/Burger"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Mac)</Button>
+                </a>
+              </CardActions>
+              <CardActions border>
+                <a
+                  href="https://jpeat-da-burger.herokuapp.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Windows)</Button>
+                </a>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+          </Cell>
+          <Cell col={3} style={{ paddingRight: "100px" }}>
+            <Card shadow={0} style={{ width: "265px", margin: "auto" }}>
+              <CardTitle
+                style={{
+                  color: "#000",
+                  height: "275px",
+                  background:
+                    "url(https://github.com/uw-labs/bloomrpc/blob/master/resources/blue/256x256.png?raw=true) center / cover",
+                }}
+              >
+                BloomRPC
+              </CardTitle>
+              <CardText>
+                <div className="modal-background">
+                  <button>Description of application</button>
+                  <button>Setup Steps</button>
+                </div>
+              </CardText>
+              <CardActions border>
+                <a
+                  href="https://github.com/javayporter/Team_Generator"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Mac)</Button>
+                </a>
+              </CardActions>
+              <CardActions border>
+                <a
+                  href="https://jpteam-generator.herokuapp.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Windows)</Button>
+                </a>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+          </Cell>
+          <Cell col={3} style={{ paddingRight: "100px" }}>
+            <Card shadow={0} style={{ width: "265px", margin: "auto" }}>
+              <CardTitle
+                style={{
+                  color: "#000",
+                  height: "275px",
+                  background:
+                    "url(https://img2.pngio.com/mysql-logo-png-download-512512-free-transparent-mysql-mysql-workbench-png-900_520.jpg) center / cover",
+                }}
+              >
+                MySQL Workbench
+              </CardTitle>
+              <CardText>
+                <div className="modal-background">
+                  <button>Description of application</button>
+                  <button>Setup Steps</button>
+                </div>
+              </CardText>
+              <CardActions border>
+                <a
+                  href="https://github.com/javayporter/Note_Taker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Mac)</Button>
+                </a>
+              </CardActions>
+              <CardActions border>
+                <a
+                  href=" https://fast-fortress-39105.herokuapp.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Windows)</Button>
+                </a>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+          </Cell>
+          <Cell col={3} style={{ paddingRight: "100px" }}>
+            <Card shadow={0} style={{ width: "265px", margin: "auto" }}>
+              <CardTitle
+                style={{
+                  color: "#000",
+                  height: "275px",
+                  background:
+                    "url(https://user-images.githubusercontent.com/10379994/31985754-c56b8dba-b998-11e7-9705-a7f984433049.png) center / cover",
+                }}
+              >
+                Visual Studio Code
+              </CardTitle>
+              <CardText>
+                <div className="modal-background">
+                  <button>Description of application</button>
+                  <button>Setup Steps</button>
+                </div>
+              </CardText>
+              <CardActions border>
+                <a
+                  href="https://github.com/javayporter/User_Directory"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Mac)</Button>
+                </a>
+              </CardActions>
+              <CardActions border>
+                <a
+                  href="https://jpsuer-directory.herokuapp.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Windows)</Button>
+                </a>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+          </Cell>
+          <Cell col={3} style={{ paddingRight: "100px" }}>
+            <Card shadow={0} style={{ width: "265px", margin: "auto" }}>
+              <CardTitle
+                style={{
+                  color: "#000",
+                  height: "275px",
+                  background:
+                    "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
+                }}
+              >
+                Insomnia
+              </CardTitle>
+              <CardText>
+                <div className="modal-background">
+                  <button>Description of application</button>
+                  <button>Setup Steps</button>
+                </div>
+              </CardText>
+              <CardActions border>
+                <a
+                  href="https://github.com/javayporter/Burger"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Mac)</Button>
+                </a>
+              </CardActions>
+              <CardActions border>
+                <a
+                  href="https://jpeat-da-burger.herokuapp.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Windows)</Button>
+                </a>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+          </Cell>
+          <Cell col={3} style={{ paddingRight: "100px" }}>
+            <Card shadow={0} style={{ width: "265px", margin: "auto" }}>
+              <CardTitle
+                style={{
+                  color: "#000",
+                  height: "275px",
+                  background:
+                    "url(https://github.com/uw-labs/bloomrpc/blob/master/resources/blue/256x256.png?raw=true) center / cover",
+                }}
+              >
+                BloomRPC
+              </CardTitle>
+              <CardText>
+                <div className="modal-background">
+                  <button>Description of application</button>
+                  <button>Setup Steps</button>
+                </div>
+              </CardText>
+              <CardActions border>
+                <a
+                  href="https://github.com/javayporter/Team_Generator"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Mac)</Button>
+                </a>
+              </CardActions>
+              <CardActions border>
+                <a
+                  href="https://jpteam-generator.herokuapp.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Windows)</Button>
+                </a>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+          </Cell>
+          <Cell col={3} style={{ paddingRight: "100px" }}>
+            <Card shadow={0} style={{ width: "265px", margin: "auto" }}>
+              <CardTitle
+                style={{
+                  color: "#000",
+                  height: "275px",
+                  background:
+                    "url(https://img2.pngio.com/mysql-logo-png-download-512512-free-transparent-mysql-mysql-workbench-png-900_520.jpg) center / cover",
+                }}
+              >
+                MySQL Workbench
+              </CardTitle>
+              <CardText>
+                <div className="modal-background">
+                  <button>Description of application</button>
+                  <button>Setup Steps</button>
+                </div>
+              </CardText>
+              <CardActions border>
+                <a
+                  href="https://github.com/javayporter/Note_Taker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Mac)</Button>
+                </a>
+              </CardActions>
+              <CardActions border>
+                <a
+                  href=" https://fast-fortress-39105.herokuapp.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Windows)</Button>
+                </a>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+          </Cell>
+          <Cell col={3} style={{ paddingRight: "100px" }}>
+            <Card shadow={0} style={{ width: "265px", margin: "auto" }}>
+              <CardTitle
+                style={{
+                  color: "#000",
+                  height: "275px",
+                  background:
+                    "url(https://user-images.githubusercontent.com/10379994/31985754-c56b8dba-b998-11e7-9705-a7f984433049.png) center / cover",
+                }}
+              >
+                Visual Studio Code
+              </CardTitle>
+              <CardText>
+                <div className="modal-background">
+                  <button>Description of application</button>
+                  <button>Setup Steps</button>
+                </div>
+              </CardText>
+              <CardActions border>
+                <a
+                  href="https://github.com/javayporter/User_Directory"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Mac)</Button>
+                </a>
+              </CardActions>
+              <CardActions border>
+                <a
+                  href="https://jpsuer-directory.herokuapp.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button colored>Download (Windows)</Button>
+                </a>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+          </Cell>
           <Cell col={3} style={{ paddingRight: "100px" }}>
             <Card shadow={0} style={{ width: "265px", margin: "auto" }}>
               <CardTitle

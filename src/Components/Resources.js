@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Grid, Cell, Tab, Tabs } from "react-mdl";
 import ListGroup from "react-bootstrap/ListGroup";
 import PropTypes from "prop-types";
+//import { TabPanel } from "@material-ui/core";
 import "./Resources.css";
 
 // Consts (Link Descriptions) //
@@ -47,60 +48,11 @@ const crud_sprintLink =
   "https://angieslist.atlassian.net/secure/RapidBoard.jspa?rapidView=428";
 
 //Components
-class XTabs extends Component {
-  static propTypes = {
-    children: PropTypes.instanceOf(Array).isRequired,
-  };
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      activeTab: this.props.children[0].props.label,
-    };
-  }
-
-  onClickTabItem = (tab) => {
-    this.setState({ activeTab: tab });
-  };
-  render() {
-    const {
-      onClickTabItem,
-      props: { children },
-      state: { activeTab },
-    } = this;
-
-    return (
-      <div className="tabs">
-        <ol className="tab-list">
-          {children.map((child) => {
-            const { label } = child.props;
-
-            return (
-              <Tab
-                activeTab={activeTab}
-                key={label}
-                label={label}
-                onClick={onClickTabItem}
-              />
-            );
-          })}
-        </ol>
-        <div className="tab-content">
-          {children.map((child) => {
-            if (child.props.label !== activeTab) return undefined;
-            return child.props.children;
-          })}
-        </div>
-      </div>
-    );
-  }
-}
 
 class Resources extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeTab: 0 };
+    this.state = { activeTab: 0, text: "Javay" };
   }
   render() {
     return (
@@ -108,166 +60,20 @@ class Resources extends Component {
         <div className="demo-tabs">
           <Tabs
             activeTab={this.state.activeTab}
-            onChange={(tabId) => this.setState({ activeTab: tabId })}
+            onChange={(tabId) => this.setState({ text: tabId })}
             ripple
           >
-            <Tab>Quick Links</Tab>
-            <Tab>Articles</Tab>
-            <Tab>Videos</Tab>
+            <Tab>Testing the AC</Tab>
+            <Tab>Negative Testing</Tab>
+            <Tab>Edge Case Testing</Tab>
           </Tabs>
+
           <section>
             <div className="content">
-              Content for the tab: {this.state.activeTab}
+              Content for the tab: {this.state.text}
             </div>
           </section>
         </div>
-
-        {/* Links Grid */}
-        <Grid className="demo-grid-1">
-          <Cell className="rounded-border" col={3}>
-            <h5>Procenter Links</h5>
-            {/* Stage 5 Links */}
-            <h5>Stage 5</h5>
-            <ListGroup defaultActiveKey={stage5_selectACustomerLink}>
-              <ListGroup.Item action href={stage5_selectACustomerLink}>
-                {selectACustomerLinkDesc}
-              </ListGroup.Item>
-
-              <ListGroup.Item action href={stage5_officeAppLoginLink} disabled>
-                {officeAppLoginLinkDesc}
-              </ListGroup.Item>
-              <ListGroup.Item
-                action
-                href={stage5_officeAppPriceListLink}
-                disabled
-              >
-                {officeAppPriceListLinkDesc}
-              </ListGroup.Item>
-              <ListGroup.Item
-                action
-                href={stage5_officeAppCustomersLink}
-                disabled
-              >
-                {officeAppCustomersLinkDesc}
-              </ListGroup.Item>
-            </ListGroup>
-            {/* Stage Sierra Links */}
-            <h5>Stage Sierra</h5>
-            <ListGroup defaultActiveKey={stageSierra_selectACustomerLink}>
-              <ListGroup.Item
-                variant="warning"
-                action
-                href={stageSierra_selectACustomerLink}
-              >
-                {selectACustomerLinkDesc}
-              </ListGroup.Item>
-
-              <ListGroup.Item
-                action
-                href={stageSierra_officeAppLoginLink}
-                disabled
-              >
-                {officeAppLoginLinkDesc}
-              </ListGroup.Item>
-              <ListGroup.Item
-                action
-                href={stageSierra_officeAppPriceListLink}
-                disabled
-              >
-                {officeAppPriceListLinkDesc}
-              </ListGroup.Item>
-              <ListGroup.Item
-                action
-                href={stageSierra_officeAppCustomersLink}
-                disabled
-              >
-                {officeAppCustomersLinkDesc}
-              </ListGroup.Item>
-            </ListGroup>
-            {/* Stage PROD Links */}
-            <h5>Production</h5>
-            <ListGroup defaultActiveKey={prod_selectACustomerLink}>
-              <ListGroup.Item
-                variant="info"
-                action
-                href={prod_selectACustomerLink}
-              >
-                {selectACustomerLinkDesc}
-              </ListGroup.Item>
-
-              <ListGroup.Item action href={prod_officeAppLoginLink} disabled>
-                {officeAppLoginLinkDesc}
-              </ListGroup.Item>
-              <ListGroup.Item
-                action
-                href={prod_officeAppPriceListLink}
-                disabled
-              >
-                {officeAppPriceListLinkDesc}
-              </ListGroup.Item>
-              <ListGroup.Item
-                action
-                href={prod_officeAppCustomersLink}
-                disabled
-              >
-                {officeAppCustomersLinkDesc}
-              </ListGroup.Item>
-            </ListGroup>
-          </Cell>
-
-          <Cell className="rounded-border" col={3}>
-            <h5>Office App Links</h5>
-            <ListGroup>
-              <ListGroup.Item action href={supernova_sprintLink}>
-                Supernova Sprint Board
-              </ListGroup.Item>
-
-              <ListGroup.Item action href={wp_sprintLink} disabled>
-                Wolff Pack Sprint Board
-              </ListGroup.Item>
-              <ListGroup.Item action href={crud_sprintLink} disabled>
-                CRUD Sprint Board
-              </ListGroup.Item>
-            </ListGroup>
-          </Cell>
-          <Cell className="rounded-border" col={3}>
-            <h5>Member App Links</h5>
-
-            <ListGroup>
-              <ListGroup.Item action href="https://jwt.io">
-                JWT
-              </ListGroup.Item>
-              <ListGroup.Item action href="https://www.epochconverter.com/">
-                Epoch Converter
-              </ListGroup.Item>
-              <ListGroup.Item
-                action
-                href="https://www.developer.intuit.com/app/developer/sandbox"
-              >
-                Intuit Developer Sandbox
-              </ListGroup.Item>
-            </ListGroup>
-          </Cell>
-
-          <Cell className="rounded-border" col={3}>
-            <h5>Visitor App Links</h5>
-
-            <ListGroup>
-              <ListGroup.Item action href="https://jwt.io">
-                JWT
-              </ListGroup.Item>
-              <ListGroup.Item action href="https://www.epochconverter.com/">
-                Epoch Converter
-              </ListGroup.Item>
-              <ListGroup.Item
-                action
-                href="https://www.developer.intuit.com/app/developer/sandbox"
-              >
-                Intuit Developer Sandbox
-              </ListGroup.Item>
-            </ListGroup>
-          </Cell>
-        </Grid>
       </div>
     );
   }

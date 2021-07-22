@@ -101,17 +101,27 @@ class App extends Component {
                   Visitor App
                 </NavDropdown.Item>
               </NavDropdown>
+              <NavDropdown title="Squads" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="/snovapack">Snovapack</NavDropdown.Item>
+                <NavDropdown.Item href="/crud">CRUD</NavDropdown.Item>
+                <NavDropdown.Item href="/shakenbake">
+                  Shake N' Bake
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/guesstimators">
+                  Guesstimators
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/gringotts">Gringotts</NavDropdown.Item>
+                <NavDropdown.Item href="/kraken">Kraken</NavDropdown.Item>
+              </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="/login">Register/Log In</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Help
-              </Nav.Link>
+              <button>Help</button>
+
+              <AmplifySignOut />
             </Nav>
           </Navbar.Collapse>
         </Navbar>
         <Main />
-        <AmplifySignOut />
       </div>
 
       // Layout from react-mdl

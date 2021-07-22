@@ -9,6 +9,12 @@ import Helpful from "./Helpful";
 import RegistrationForm from "./Login/RegistrationForm";
 import userLoginForm from "./Login/userLoginForm";
 import Applications from "./Tools";
+import Snova from "./Snovapack";
+import ShakeNBake from "./Shakenbake";
+import Crud from "./Crud";
+import Kraken from "./Kraken";
+import Guesstimators from "./Guesstimators";
+import Gringotts from "./Gringotts";
 
 const Main = () => (
   <Switch>
@@ -20,6 +26,12 @@ const Main = () => (
     <Route path="/helpful" component={Helpful} />
     <Route path="/register" component={RegistrationForm} />
     <Route path="/login" component={userLoginForm} />
+    <Route path="/snovapack" component={Snova} />
+    <Route path="/shakenbake" component={ShakeNBake} />
+    <Route path="/crud" component={Crud} />
+    <Route path="/kraken" component={Kraken} />
+    <Route path="/guesstimators" component={Guesstimators} />
+    <Route path="/gringotts" component={Gringotts} />
   </Switch>
 );
 
