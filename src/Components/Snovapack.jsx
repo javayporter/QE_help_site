@@ -110,25 +110,23 @@ class Snova extends Component {
           <Grid>
             <Cell style={{ backgroundColor: "#EBECF0" }} col={3}>
               <h3 className="responsive-text">Procenter App</h3>
-              <h5>Getting Started</h5>
-              <h5>Shared Steps and Libraries</h5>
-              <h5>Writing Tests</h5>
-              <h5>Running Tests</h5>
-              <h5>Python Help Tips</h5>
+              <h5>What is the Procenter App?</h5>
+              <h5>Page Intents</h5>
+              <h5>Flows</h5>
             </Cell>
             <Cell style={{ backgroundColor: "#EBECF0" }} col={3}>
               <h3 className="responsive-text">Office App</h3>
-              <h5>Standard Ticketing Process</h5>
-              <h5>PE Board Process</h5>
-              <h5>TS Data Request Process</h5>
-              <h5>Automation Ticket Process</h5>
+              <h5>Customers/Contacts</h5>
+              <h5>Quotes</h5>
+              <h5>Invoices</h5>
+              <h5>Payments</h5>
             </Cell>
             <Cell style={{ backgroundColor: "#EBECF0" }} col={3}>
               <h3 className="responsive-text">Mobile App</h3>
-              <h5>Standard Ticketing Process</h5>
-              <h5>PE Board Process</h5>
-              <h5>TS Data Request Process</h5>
-              <h5>Automation Ticket Process</h5>
+              <h5>Downloading Beta App</h5>
+              <h5>Android</h5>
+              <h5>iOS</h5>
+              <h5>Mobile vs WEB</h5>
             </Cell>
             <Cell style={{ backgroundColor: "#EBECF0" }} col={3}>
               <h3 className="responsive-text">QuickBooks Online Integration</h3>
