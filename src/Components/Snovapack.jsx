@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import angiImage from "./comms_image.png";
 import { urlencoded } from "body-parser";
+import "./SquadPages.css";
 const testingComms =
   "https://angieslist.atlassian.net/wiki/spaces/SNOVA/pages/2422276101/Testing+Comms+Tickets";
 
@@ -35,42 +36,34 @@ const listFlags = featureFlags.map((featureFlags) => <li>{featureFlags}</li>);
 class Snova extends Component {
   render() {
     return (
-      <div style={{ marginTop: "3%", textAlign: "center" }}>
-        <h1>SNOVAPACK</h1>
-        <div
-          style={{
-            marginLeft: "7%",
-            marginRight: "7%",
-            backgroundColor: "#EBECF0",
-          }}
-        >
-          <Grid>
-            <Cell col={4}>
-              <h3>Currrent Project: COMMs Rebranding</h3>
-              <h5>Background</h5>
-              <h5>Environments</h5>
-              {listEnvs}
-              <h5>Feature Flags</h5>
-              {listFlags}
-              <h5>
-                <a href={testingComms}>Testing</a>
-              </h5>
-            </Cell>
-            <Cell col={1}></Cell>
-            <Cell col={6}>
+      <div className="main-page-div">
+        <h1 className="squad-name-title">SNOVAPACK</h1>
+        <div className="page-container-div angi-background">
+          {/* <Grid>
+            <Cell> */}
+          <h3 className="responsive-text">
+            Currrent Project: COMMs Rebranding
+          </h3>
+          <h5>Background</h5>
+          <h5>Environments</h5>
+          {listEnvs}
+          <h5>Feature Flags</h5>
+          {listFlags}
+          <h5>
+            <a style={{ color: "black" }} href={testingComms}>
+              Testing
+            </a>
+          </h5>
+          {/* </Cell> */}
+          {/* <Cell className="col-1" col={1}></Cell> */}
+          {/* <Cell className="col-4" col={4}>
               <div>
-                <img src={angiImage} alt="test" height="800" width="800"></img>
+                <img src={angiImage} alt="comms-email"></img>
               </div>
-            </Cell>
-          </Grid>
+            </Cell> */}
+          {/* </Grid> */}
         </div>
-        <div
-          style={{
-            marginLeft: "7%",
-            marginRight: "7%",
-            backgroundColor: "#EBECF0",
-          }}
-        >
+        <div className="page-container-div">
           <Grid>
             <Cell col={6}>
               <h3>Automation</h3>
@@ -89,49 +82,34 @@ class Snova extends Component {
             </Cell>
           </Grid>
         </div>
-        <div
-          style={{
-            marginLeft: "7%",
-            marginRight: "7%",
-            backgroundColor: "#EBECF0",
-            backgroundImage:
-              'url("https://news.mhelpdesk.com/wp-content/uploads/2017/01/Quick-Chat.png)',
-            backgroundRepeat: "no-repeat",
-          }}
-        >
+        <div className="page-container-div mhd-background">
           <h3>mHelpDesk</h3>
           <Grid>
             <Cell col={4}>
-              <h3>mHD Web App</h3>
+              <h3 className="responsive-text">mHD Web App</h3>
               <h5>Environments</h5>
               <h5>Testing Bugs</h5>
               <h5>Regression Testing</h5>
               <h5>Test Accounts</h5>
             </Cell>
             <Cell col={4}>
-              <h3>MV2</h3>
+              <h3 className="responsive-text">MV2</h3>
               <h5>Testing Bugs</h5>
               <h5>Regression Testing</h5>
             </Cell>
             <Cell col={4}>
-              <h3>QuickBooks</h3>
+              <h3 className="responsive-text">QuickBooks</h3>
               <h5>QuickBooks Online</h5>
               <h5>QuickBooks Desktop 1</h5>
               <h5>QuickBooks Desktop 2</h5>
             </Cell>
           </Grid>
         </div>
-        <div
-          style={{
-            marginLeft: "7%",
-            marginRight: "7%",
-            backgroundColor: "#EBECF0",
-          }}
-        >
+        <div className="page-container-div">
           <h3>Business Management Tools (BMT)</h3>
           <Grid>
             <Cell style={{ backgroundColor: "#EBECF0" }} col={3}>
-              <h3>Procenter App</h3>
+              <h3 className="responsive-text">Procenter App</h3>
               <h5>Getting Started</h5>
               <h5>Shared Steps and Libraries</h5>
               <h5>Writing Tests</h5>
@@ -139,21 +117,21 @@ class Snova extends Component {
               <h5>Python Help Tips</h5>
             </Cell>
             <Cell style={{ backgroundColor: "#EBECF0" }} col={3}>
-              <h3>Office App</h3>
+              <h3 className="responsive-text">Office App</h3>
               <h5>Standard Ticketing Process</h5>
               <h5>PE Board Process</h5>
               <h5>TS Data Request Process</h5>
               <h5>Automation Ticket Process</h5>
             </Cell>
             <Cell style={{ backgroundColor: "#EBECF0" }} col={3}>
-              <h3>Mobile App</h3>
+              <h3 className="responsive-text">Mobile App</h3>
               <h5>Standard Ticketing Process</h5>
               <h5>PE Board Process</h5>
               <h5>TS Data Request Process</h5>
               <h5>Automation Ticket Process</h5>
             </Cell>
             <Cell style={{ backgroundColor: "#EBECF0" }} col={3}>
-              <h3>QuickBooks Online Integration</h3>
+              <h3 className="responsive-text">QuickBooks Online Integration</h3>
               <h5>Initial Sync / Account Setup</h5>
               <h5>Syncing</h5>
               <h5>Switching Companies / Disconnecting Sync</h5>
