@@ -41,9 +41,7 @@ class Snova extends Component {
         <div className="page-container-div angi-background">
           {/* <Grid>
             <Cell> */}
-          <h3 className="responsive-text">
-            Currrent Project: COMMs Rebranding
-          </h3>
+          <h3 className="responsive-text">Current Project: COMMs Rebranding</h3>
           <h5>Background</h5>
           <h5>Environments</h5>
           {listEnvs}
