@@ -23,11 +23,7 @@ class Automation extends Component {
             <Tab>Mobile</Tab>
           </Tabs>
         </div>
-        <div style={{ marginLeft: "10%", marginTop: "5%" }}>
-          <h1 style={{ textAlign: "center" }}>It's great to automate!</h1>Just
-          add information about automation here like this. <br />
-          What you'll need <br />
-        </div>
+        <div style={{ marginLeft: "10%", marginTop: "5%" }}></div>
 
         {/* <Grid className="demo-grid-1">
           <Cell className="rounded-border" col={6}>

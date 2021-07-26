@@ -209,7 +209,7 @@ class Applications extends Component {
               </CardText>
               <CardActions border>
                 <a
-                  href="https://github.com/javayporter/Note_Taker"
+                  href="https://dev.mysql.com/downloads/workbench/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -218,7 +218,7 @@ class Applications extends Component {
               </CardActions>
               <CardActions border>
                 <a
-                  href=" https://fast-fortress-39105.herokuapp.com/"
+                  href="https://dev.mysql.com/downloads/workbench/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -250,7 +250,7 @@ class Applications extends Component {
               </CardText>
               <CardActions border>
                 <a
-                  href="https://github.com/javayporter/User_Directory"
+                  href="https://code.visualstudio.com/download"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -259,7 +259,7 @@ class Applications extends Component {
               </CardActions>
               <CardActions border>
                 <a
-                  href="https://jpsuer-directory.herokuapp.com/"
+                  href="https://code.visualstudio.com/download"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -291,7 +291,7 @@ class Applications extends Component {
               </CardText>
               <CardActions border>
                 <a
-                  href="https://github.com/javayporter/Burger"
+                  href="https://www.postman.com/downloads/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -300,7 +300,7 @@ class Applications extends Component {
               </CardActions>
               <CardActions border>
                 <a
-                  href="https://jpeat-da-burger.herokuapp.com/"
+                  href="https://www.postman.com/downloads/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -332,7 +332,7 @@ class Applications extends Component {
               </CardText>
               <CardActions border>
                 <a
-                  href="https://github.com/javayporter/Team_Generator"
+                  href="https://www.jetbrains.com/idea/download/#section=mac"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -341,7 +341,7 @@ class Applications extends Component {
               </CardActions>
               <CardActions border>
                 <a
-                  href="https://jpteam-generator.herokuapp.com/"
+                  href="https://www.jetbrains.com/idea/download/#section=windows"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -373,7 +373,7 @@ class Applications extends Component {
               </CardText>
               <CardActions border>
                 <a
-                  href="https://github.com/javayporter/Note_Taker"
+                  href="https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -382,7 +382,7 @@ class Applications extends Component {
               </CardActions>
               <CardActions border>
                 <a
-                  href=" https://fast-fortress-39105.herokuapp.com/"
+                  href="https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -414,7 +414,7 @@ class Applications extends Component {
               </CardText>
               <CardActions border>
                 <a
-                  href="https://github.com/javayporter/User_Directory"
+                  href="https://dbeaver.io/download/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -423,7 +423,7 @@ class Applications extends Component {
               </CardActions>
               <CardActions border>
                 <a
-                  href="https://jpsuer-directory.herokuapp.com/"
+                  href="https://dbeaver.io/download/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -455,7 +455,7 @@ class Applications extends Component {
               </CardText>
               <CardActions border>
                 <a
-                  href="https://github.com/javayporter/Burger"
+                  href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -464,7 +464,7 @@ class Applications extends Component {
               </CardActions>
               <CardActions border>
                 <a
-                  href="https://jpeat-da-burger.herokuapp.com/"
+                  href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -496,7 +496,7 @@ class Applications extends Component {
               </CardText>
               <CardActions border>
                 <a
-                  href="https://github.com/javayporter/Team_Generator"
+                  href="https://www.gitkraken.com/download"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -505,7 +505,7 @@ class Applications extends Component {
               </CardActions>
               <CardActions border>
                 <a
-                  href="https://jpteam-generator.herokuapp.com/"
+                  href="https://www.gitkraken.com/download"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -537,7 +537,7 @@ class Applications extends Component {
               </CardText>
               <CardActions border>
                 <a
-                  href="https://github.com/javayporter/Note_Taker"
+                  href="https://appium.io/downloads.html"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -546,7 +546,7 @@ class Applications extends Component {
               </CardActions>
               <CardActions border>
                 <a
-                  href=" https://fast-fortress-39105.herokuapp.com/"
+                  href="https://appium.io/downloads.html"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -578,7 +578,7 @@ class Applications extends Component {
               </CardText>
               <CardActions border>
                 <a
-                  href="https://github.com/javayporter/User_Directory"
+                  href="https://support.smartbear.com/bitbar/docs/tutorials-and-samples.html"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -587,7 +587,7 @@ class Applications extends Component {
               </CardActions>
               <CardActions border>
                 <a
-                  href="https://jpsuer-directory.herokuapp.com/"
+                  href="https://support.smartbear.com/bitbar/docs/tutorials-and-samples.html"
                   rel="noopener noreferrer"
                   target="_blank"
                 >

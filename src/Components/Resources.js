@@ -70,7 +70,7 @@ class Resources extends Component {
 
           <section>
             <div className="content">
-              Content for the tab: {this.state.text}
+              {/* Content for the tab: {this.state.text} */}
             </div>
           </section>
         </div>
