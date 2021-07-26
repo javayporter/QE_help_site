@@ -137,7 +137,6 @@ class Snova extends Component {
             </Cell>
           </Grid>
         </div>
-        Enter Snovapack Specific details{" "}
       </div>
     );
   }

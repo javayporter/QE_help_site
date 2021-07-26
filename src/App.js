@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "react-mdl";
 // import UserStore from './Stores/userStore';
 // import LoginForm from './Components/LoginForm';
 // import InputField from './Components/InputField';
@@ -38,8 +39,10 @@ class JNavbar extends React.Component {
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Tools" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/tools">Database</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Automation</NavDropdown.Item>
+              <NavDropdown.Item href="/tools">
+                All Tools/Applications
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Database</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">
                 IDEs/Other Tools
               </NavDropdown.Item>
@@ -84,11 +87,13 @@ class App extends Component {
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Tools" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="/tools">Database</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item href="/tools">
+                  All Applications/Tools
+                </NavDropdown.Item>
+                {/* <NavDropdown.Item href="#action/3.2">
                   Automation
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">IDE</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">IDE</NavDropdown.Item> */}
               </NavDropdown>
               <NavDropdown title="Pages/App" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
@@ -115,7 +120,9 @@ class App extends Component {
               </NavDropdown>
             </Nav>
             <Nav>
-              <button>Help</button>
+              <Button href="/crud" raised accent>
+                Help
+              </Button>
 
               <AmplifySignOut />
             </Nav>
