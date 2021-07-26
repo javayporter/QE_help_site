@@ -122,7 +122,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
@@ -163,7 +162,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
@@ -204,7 +202,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
@@ -245,7 +242,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
@@ -286,7 +282,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
@@ -327,7 +322,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
@@ -368,7 +362,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
@@ -409,7 +402,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
@@ -450,7 +442,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
@@ -491,7 +482,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
@@ -532,7 +522,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
@@ -573,7 +562,6 @@ class Applications extends Component {
               <CardText>
                 <div className="modal-background">
                   <button>Description of application</button>
-                  <button>Setup Steps</button>
                 </div>
               </CardText>
               <CardActions border>
