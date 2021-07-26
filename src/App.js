@@ -120,7 +120,18 @@ class App extends Component {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Button href="/crud" raised accent>
+              <Button
+                style={{
+                  backgroundColor: "#f90",
+                  height: "43px",
+                  width: "153px",
+                  padding: "1.50 rem",
+                  marginRight: "2%",
+                }}
+                href="/help"
+                raised
+                accent
+              >
                 Help
               </Button>
 
