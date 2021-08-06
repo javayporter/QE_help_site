@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import { Grid, Cell, Tab, Tabs } from "react-mdl";
+import { Tab, Tabs } from "react-bootstrap";
+import { Grid, Cell } from "react-mdl";
 import ListGroup from "react-bootstrap/ListGroup";
 import PropTypes from "prop-types";
 //import { TabPanel } from "@material-ui/core";
 import "./Resources.css";
+import Automation from "./Automation";
 
 // Consts (Link Descriptions) //
 const selectACustomerLinkDesc = "Login and redirect to Select A Customer Page";
@@ -50,30 +52,61 @@ const crud_sprintLink =
 //Components
 
 class Resources extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { activeTab: 0, text: "Javay" };
-  }
   render() {
     return (
       <div style={{ width: "100%", margin: "auto" }}>
-        <div className="demo-tabs">
-          <Tabs
-            activeTab={this.state.activeTab}
-            onChange={(tabId) => this.setState({ text: tabId })}
-            ripple
-          >
-            <Tab>Testing the AC</Tab>
-            <Tab>Negative Testing</Tab>
-            <Tab>Edge Case Testing</Tab>
-          </Tabs>
-
-          <section>
-            <div className="content">
-              {/* Content for the tab: {this.state.text} */}
-            </div>
-          </section>
-        </div>
+        <Tabs
+          defaultActiveKey="profile"
+          id="uncontrolled-tab-example"
+          className="mb-3"
+        >
+          <Tab eventKey="home" title="Testing the AC">
+            {" "}
+            <section className="sec-text-box">
+              Acceptance criteria are a set of conditions that need to be met in
+              order to accept the story as complete. Acceptance criteria can be
+              thought of as “what needs to be done”. You can use acceptance
+              criteria to clarify the scope of each story, so the team is clear
+              on what is expected to be done to deliver the story. <br />
+              <br />
+              In acceptance testing, testers test a system for acceptability.
+              They evaluate the compliance of a system with business
+              requirements. After that, they test whether the product is
+              acceptable for delivery. For instance, if you’re building a Lego
+              house, you’ll check whether each piece is perfect. That comes
+              under unit testing, which we already discussed in the previous
+              section. The next step is to ensure whether all the instructions
+              have been followed. For that, you need to check after the
+              completion of each stage of the Lego building. Acceptance tests
+              scan the running application. They ensure the proper functioning
+              of user flows, user inputs, and designated actions.
+            </section>
+          </Tab>
+          <Tab eventKey="profile" title="Negative Testing">
+            <section className="sec-text-box">
+              Negative Testing is a software testing type used to check the
+              software application for unexpected input data and conditions.
+              Unexpected data or conditions can be anything from wrong data type
+              to strong hacking attack. The purpose of negative testing is to
+              prevent the software application from crashing due to negative
+              inputs and improve the quality and stability. By just doing
+              positive testing we can only make sure our system is working in
+              normal conditions. We have to make sure that our system can handle
+              unexpected conditions
+            </section>
+          </Tab>
+          <Tab eventKey="contact" title="Edge Case Testing">
+            <section className="sec-text-box">
+              Edge cases are bugs that are uncommon for users to encounter. An
+              edge case can be a minor issue. Testers should seek edge cases out
+              via regression testing. That means checking every section and
+              function in the software. This can also make it more likely to
+              find certain bugs that may happen as a result of heavy usage. In
+              some instances testers may stumble upon edge cases without even
+              trying.
+            </section>
+          </Tab>
+        </Tabs>
       </div>
     );
   }

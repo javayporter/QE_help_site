@@ -15,6 +15,7 @@ import Crud from "./Crud";
 import Kraken from "./Kraken";
 import Guesstimators from "./Guesstimators";
 import Gringotts from "./Gringotts";
+import QeOverview from "./QeOverview";
 
 const Main = () => (
   <Switch>
@@ -29,9 +30,7 @@ const Main = () => (
     <Route path="/snovapack" component={Snova} />
     <Route path="/shakenbake" component={ShakeNBake} />
     <Route path="/crud" component={Crud} />
-    <Route path="/kraken" component={Kraken} />
-    <Route path="/guesstimators" component={Guesstimators} />
-    <Route path="/gringotts" component={Gringotts} />
+    <Route path="/qe_overview" component={QeOverview} />
   </Switch>
 );
 

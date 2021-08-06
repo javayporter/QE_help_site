@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
+import { Auth } from "aws-amplify";
 // import Footer from './Components/Footer';
 
 class JNavbar extends React.Component {
@@ -76,8 +77,7 @@ class App extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#qe_overview">QE Overview</Nav.Link>
+              <Nav.Link href="/qe_overview">QE Overview</Nav.Link>
               <NavDropdown title="Testing" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/resources">
                   Manual Testing
@@ -112,11 +112,6 @@ class App extends Component {
                 <NavDropdown.Item href="/shakenbake">
                   Shake N' Bake
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/guesstimators">
-                  Guesstimators
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/gringotts">Gringotts</NavDropdown.Item>
-                <NavDropdown.Item href="/kraken">Kraken</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Nav>
