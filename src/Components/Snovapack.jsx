@@ -6,6 +6,7 @@ import "./SquadPages.css";
 const testingComms =
   "https://angieslist.atlassian.net/wiki/spaces/SNOVA/pages/2422276101/Testing+Comms+Tickets";
 
+const snovapackProcesses = "/snovapack_processes";
 const commsEnvironments = [
   "Sandbox",
   "QA: qa1-comm-engine",
@@ -64,7 +65,11 @@ class Snova extends Component {
         <div className="page-container-div">
           <Grid>
             <Cell col={6}>
-              <h3>Automation</h3>
+              <h3>
+                <a style={{ color: "black" }} href="/snovapack_automation">
+                  Automation
+                </a>
+              </h3>
               <h5>Getting Started</h5>
               <h5>Shared Steps and Libraries</h5>
               <h5>Writing Tests</h5>
@@ -72,7 +77,11 @@ class Snova extends Component {
               <h5>Python Help Tips</h5>
             </Cell>
             <Cell col={6}>
-              <h3>Processes</h3>
+              <h3>
+                <a style={{ color: "black" }} href="/snovapack_processes">
+                  Processes
+                </a>
+              </h3>
               <h5>Standard Ticketing Process</h5>
               <h5>PE Board Process</h5>
               <h5>TS Data Request Process</h5>

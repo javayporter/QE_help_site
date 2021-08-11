@@ -108,7 +108,7 @@ class LandingPage extends Component {
                 height="150"
                 width="150"
               />
-              <Card.Title className="icon-link-text">Reporting</Card.Title>
+              <Card.Title className="icon-link-text">Risk Maps</Card.Title>
             </Card.Body>
           </Card>
           <Card>

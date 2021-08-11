@@ -12,10 +12,9 @@ import Applications from "./Tools";
 import Snova from "./Snovapack";
 import ShakeNBake from "./Shakenbake";
 import Crud from "./Crud";
-import Kraken from "./Kraken";
-import Guesstimators from "./Guesstimators";
-import Gringotts from "./Gringotts";
 import QeOverview from "./QeOverview";
+import SnovaPackProcesses from "./SnovapackProcesses";
+import SnovaPackAutomation from "./SnovapackAutomation";
 
 const Main = () => (
   <Switch>
@@ -31,6 +30,8 @@ const Main = () => (
     <Route path="/shakenbake" component={ShakeNBake} />
     <Route path="/crud" component={Crud} />
     <Route path="/qe_overview" component={QeOverview} />
+    <Route path="/snovapack_processes" component={SnovaPackProcesses} />
+    <Route path="/snovapack_automation" component={SnovaPackAutomation} />
   </Switch>
 );
 
