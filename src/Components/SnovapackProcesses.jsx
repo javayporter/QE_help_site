@@ -11,8 +11,9 @@ import {
   Button,
 } from "react-mdl";
 
-const BULLET = "\u2022 ";
+// const BULLET = "\u2022 ";
 
+// Functions (TS Data Request Process)
 function ListBackgroundSteps(props) {
   const steps = props.steps;
   const listItems = steps.map((step) => <li key={step.toString()}>{step}</li>);
@@ -40,6 +41,25 @@ function ListFilesPhotosSteps(props) {
   return <ul>{listItems}</ul>;
 }
 
+//Functions (PE Process)
+function ListPEProcessSteps(props) {
+  const pe_process_steps = props.pe_process_steps;
+  const listItems = pe_process_steps.map((step) => (
+    <li key={step.toString()}>{step}</li>
+  ));
+  return <ul>{listItems}</ul>;
+}
+
+//Functions (Standard Ticketing Process)
+function ListStandardTicketSteps(props) {
+  const standard_ticketing_steps = props.standard_ticketing_steps;
+  const listItems = standard_ticketing_steps.map((step) => (
+    <li key={step.toString()}>{step}</li>
+  ));
+  return <ul>{listItems}</ul>;
+}
+
+// Consts (TS Data Request Process)
 const steps = [
   "QE, Javay, will monitor mHD board throughout the day for new TS Data Request tickets ",
   "Once it's been confirmed that the ticket can be handled by QE, the process below is followed: ",
@@ -66,6 +86,31 @@ const files_photos_steps = [
   "QE then follows process outlined above and update PE ticket",
 ];
 
+// Consts (PE Process)
+const peBoardLink =
+  "https://angieslist.atlassian.net/secure/RapidBoard.jspa?rapidView=592&selectedIssue=PE-20759";
+const pe_process_steps = [
+  "When creating a SNOVA ticket from a PE ticket that is ready to go (in the Assigned, In Progress column), it will be in the SNOVA project. In the subject, add [BMT], [mHD], or [AM sync] depending on where the requested work needs to be done. Then in the subject, add [Data Request] or [Bug] depending on the nature of the request. Next set the ticket type to Bug, even if the PE ticket does not indicate a bug. This ensures the SNOVA ticket shows up on the SNOVApack New Bugs filter that Tyler Candee has set up so that we can review new PE requests during standup.",
+  "Then copy over any relevant information including the Background information, the repro steps, any video or screenshots, and add any information you were able to gather when verifying the ticket. You can use the old standard TS ticket body template, filling out the relevant parts. Also, link the PE ticket to the SNOVA ticket by setting the SNOVA ticket as “depended on by” the PE ticket. You’ll also want to set the priority on the SNOVA ticket appropriately, using the Priority, Impact, and Urgency fields to determine the best priority to use.",
+  "Finally, add the “pe-ticket” label to the SNOVA ticket. From there, the SNOVA ticket is then prioritized, assigned, and worked on like a normal SNOVA ticket. Once the ticket work is completed the dev or SNOVA QE closes the SNOVA ticket and moves the associated PE ticket to Resolved + ping the TS rep on the PE ticket, as mentioned above.",
+];
+
+// Consts (Standard Ticketing Process)
+const standard_ticketing_steps = [
+  "Ticket status is changed to Ready for Testing by dev",
+  "When ready to test QE changes status to Testing on QA",
+  "If ticket fails QE creates a subtask linked to the the orginal ticket, changes the ticket status back to In Progress and assigns the original developer",
+  "If the ticket passes QE adds a detailed comment to the ticket and changes the status to Awaiting Staging Push",
+  "Devs will push the changes to the Staging enviroment then update the ticket status to Testing on Staging when the ticket is ready to be tested on Stage",
+  "QE then tests ticket on Stage",
+  "If the ticket fails QE leaves a detailed comment, tags the original developer and then flags the ticket",
+  "If the ticket passes, QE adds a detailed comment then changes the status of the ticket to Awaiting Release",
+  "Devs will push the changes to PROD the status to Released",
+  "QEs then verify the changes on PROD, leave a comment and then change the ticket statsus to Done",
+  "If the verification on PROD fails, QEs leave a detailed comment, tags the original developer and flags the ticket.",
+];
+
+//Components
 class SnovaPackProcesses extends Component {
   render() {
     return (
@@ -86,7 +131,13 @@ class SnovaPackProcesses extends Component {
                 </CardTitle>
                 <CardText>
                   <div className="modal-background">
-                    <article>State Process Here</article>
+                    <article>
+                      <div>
+                        <ListStandardTicketSteps
+                          standard_ticketing_steps={standard_ticketing_steps}
+                        />
+                      </div>
+                    </article>
                   </div>
                 </CardText>
               </Card>
@@ -107,7 +158,58 @@ class SnovaPackProcesses extends Component {
                 </CardTitle>
                 <CardText>
                   <div className="modal-background">
-                    <article>State Process Here</article>
+                    <article>
+                      <h5>Board Statuses (Relevant to Snovapack)</h5>
+                      <br />
+                      <div>
+                        <ol>
+                          <li>Acknowledged, Ready to Triage:</li>
+                          <ul>
+                            This is a holding pattern for tickets that need more
+                            information to be collected/tested by the TS rep who
+                            created the ticket. SNOVA does not touch these
+                            tickets.
+                          </ul>
+                          <li>Assigned, In Progress:</li>
+                          <ul>
+                            These are tickets that have all relevant information
+                            and are ready to SNOVA to handle. SNOVA QE reviews
+                            and verifies the ticket, then creates the
+                            corresponding SNOVA ticket and move the PE ticket to
+                            PE Backlog.
+                          </ul>
+                          <li>PE Backlog:</li>
+                          <ul>
+                            Holding pattern for PE tickets that have had the
+                            corresponding SNOVA ticket created. The PE ticket
+                            lives here until SNOVA completes the requested work.
+                            Once the requested work is completed, SNOVA dev
+                            moves the ticket to Resolved.
+                          </ul>
+                          <li>Resolved:</li>
+                          <ul>
+                            Once SNOVA dev completes the work for the ticket,
+                            they move the PE ticket to this status. This
+                            indicates to the TS rep that the work has been
+                            completed. TS rep will verify the fix, update the
+                            requesting SP, then close the PE ticket. The dev
+                            will also want to ping the TS rep on the PE ticket
+                            so that they are extra-aware that the ticket has
+                            been completed.
+                          </ul>
+                        </ol>
+                      </div>
+                      <h5>Board Link</h5>
+                      <br />
+                      <a href={peBoardLink}>Board Link</a>
+                      <h5>Process</h5>
+                      <br />
+                      <div>
+                        <ListPEProcessSteps
+                          pe_process_steps={pe_process_steps}
+                        />
+                      </div>
+                    </article>
                   </div>
                 </CardText>
               </Card>
@@ -185,4 +287,5 @@ class SnovaPackProcesses extends Component {
   }
 }
 
+//Exports
 export default SnovaPackProcesses;

@@ -5,7 +5,7 @@ class QeOverview extends Component {
   render() {
     return (
       <div style={{ marginTop: "3%", textAlign: "center" }}>
-        <h1>Reposibilities</h1>
+        <h1>Responsibilities</h1>
 
         <section
           style={{ marginRight: "10%", marginLeft: "10%", textAlign: "left" }}
