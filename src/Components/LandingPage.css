@@ -26,8 +26,9 @@
 .spacing {
   /* margin-top: -20%; */
   margin-bottom: 1em;
-  background-image: url(https://picjumbo.com/wp-content/uploads/entrepreneur-working-on-his-macbook_5fd21ae04b030-2210x1473.jpg);
+  background: "url(https://www.denverpost.com/wp-content/uploads/2021/03/Angi-new-logo-and-app-screeen.jpg?w=1860) center / cover";
   background-size: cover;
+  opacity: 90%;
 }
 
 .icon-link-text {
@@ -38,3 +39,17 @@
 /* .float {
 float: left;
 } */
+
+.image-links {
+  /* height: 35%; */
+  width: auto;
+  display: block;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* border: 2px solid black; */
+}
+
+.image-sizing {
+  height: auto;
+  width: 20%;
+}

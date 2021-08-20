@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Grid, Cell, Tab, Tabs } from "react-bootstrap";
 import "./Automation.css";
 import "./Resources.css";
+import { Container, Row, Col } from "react-bootstrap";
+import "./SquadPages.css";
 
 // const createGithubSteps = [
 //   "Click the following link: https://github.com/",
@@ -17,6 +19,24 @@ class Automation extends Component {
   render() {
     return (
       <div style={{ width: "100%", margin: "auto" }}>
+        <section
+          style={{
+            width: "100%",
+            background:
+              "url(https://clockwise.software/img/blog/manual-testing-vs-automation-testing/header-background.jpg) center / cover",
+            margin: "auto",
+            opacity: "80%",
+          }}
+          className="newer-style"
+        >
+          <Container>
+            <Row>
+              <Col col={6}>
+                <div className="test">Automation</div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
         <Tabs
           defaultActiveKey="profile"
           id="uncontrolled-tab-example"

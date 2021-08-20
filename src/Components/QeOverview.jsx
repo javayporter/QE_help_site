@@ -1,11 +1,32 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import "./SquadPages.css";
 
 class QeOverview extends Component {
   render() {
     return (
-      <div style={{ marginTop: "3%", textAlign: "center" }}>
-        <h1>Responsibilities</h1>
+      <div style={{ marginTop: "0%" }}>
+        <section
+          style={{
+            width: "100%",
+            background:
+              "url(https://www.fraserdove.com/wp-content/uploads/2019/09/Job_Description_Vs_Job_Ads.jpg) center / cover",
+            margin: "auto",
+            opacity: "80%",
+          }}
+          className="newer-style"
+        >
+          <Container>
+            <Row>
+              <Col col={6}>
+                <div className="test" style={{ color: "#ff5757" }}>
+                  Responsibilities
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
 
         <section
           style={{ marginRight: "10%", marginLeft: "10%", textAlign: "left" }}

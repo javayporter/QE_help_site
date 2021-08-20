@@ -8,8 +8,8 @@ import {
   CardText,
   CardActions,
   IconButton,
-  Button,
 } from "react-mdl";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 // const BULLET = "\u2022 ";
 
@@ -115,17 +115,68 @@ class SnovaPackProcesses extends Component {
   render() {
     return (
       <div>
+        <section
+          style={{
+            width: "100%",
+            background:
+              "url(https://www.valtech.com/4ab350/globalassets/00-global/02-images/04-insights/4-tips-for-managing-distributed-project-teams/team-3373638.jpg) center / cover",
+            margin: "auto",
+            opacity: "80%",
+          }}
+          className="new-style"
+        >
+          <Container>
+            <Row>
+              <Col col={6}>
+                <div className="test">Snovapack Processes</div>
+              </Col>
+              <Col col={6} className="button-placement">
+                <Button
+                  href="#snovapack-standard-process"
+                  variant="dark"
+                  style={{ marginRight: "1%" }}
+                >
+                  Standard Ticketing
+                </Button>
+                <Button
+                  href="#snovapack-pe-process"
+                  variant="dark"
+                  style={{ marginRight: "1%" }}
+                >
+                  Product Escalation
+                </Button>
+                <Button
+                  href="#ts_data-request-process"
+                  variant="dark"
+                  style={{ marginRight: "1%" }}
+                >
+                  TS Data Requests
+                </Button>
+                <Button href="#snovapack-automation-process" variant="dark">
+                  Automation
+                </Button>
+              </Col>
+            </Row>
+          </Container>
+        </section>
         <Grid>
           <Cell col={12} className="cell_styling">
             <section className="section_styling">
-              <Card shadow={0} style={{ width: "100%", margin: "auto" }}>
+              <Card
+                shadow={0}
+                style={{
+                  width: "100%",
+                  // background:
+                  //   "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
+                  margin: "auto",
+                }}
+              >
                 <CardTitle
                   style={{
                     color: "#000",
                     //   height: "275px",
-                    //   background:
-                    //     "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
                   }}
+                  id="snovapack-standard-process"
                 >
                   Standard Ticketing Process
                 </CardTitle>
@@ -153,6 +204,7 @@ class SnovaPackProcesses extends Component {
                     //   background:
                     //     "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
                   }}
+                  id="snovapack-pe-process"
                 >
                   PE Board Process
                 </CardTitle>
@@ -199,9 +251,10 @@ class SnovaPackProcesses extends Component {
                           </ul>
                         </ol>
                       </div>
-                      <h5>Board Link</h5>
+                      <h5>
+                        <a href={peBoardLink}>Board Link</a>
+                      </h5>{" "}
                       <br />
-                      <a href={peBoardLink}>Board Link</a>
                       <h5>Process</h5>
                       <br />
                       <div>
@@ -225,6 +278,7 @@ class SnovaPackProcesses extends Component {
                     //   background:
                     //     "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
                   }}
+                  id="ts_data-request-process"
                 >
                   TS Data Request Process
                 </CardTitle>
@@ -270,6 +324,7 @@ class SnovaPackProcesses extends Component {
                     //   background:
                     //     "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
                   }}
+                  id="snovapack-automation-process"
                 >
                   Automation Ticketing Process
                 </CardTitle>

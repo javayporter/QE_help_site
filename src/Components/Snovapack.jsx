@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import angiImage from "./comms_image.png";
 import { urlencoded } from "body-parser";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import "./SquadPages.css";
 const testingComms =
   "https://angieslist.atlassian.net/wiki/spaces/SNOVA/pages/2422276101/Testing+Comms+Tickets";
@@ -38,30 +39,25 @@ class Snova extends Component {
   render() {
     return (
       <div className="main-page-div">
-        <h1 className="squad-name-title">SNOVAPACK</h1>
-        <div className="page-container-div angi-background">
-          {/* <Grid>
-            <Cell> */}
-          <h3 className="responsive-text">Current Project: COMMs Rebranding</h3>
-          <h5>Background</h5>
-          <h5>Environments</h5>
-          {listEnvs}
-          <h5>Feature Flags</h5>
-          {listFlags}
-          <h5>
-            <a style={{ color: "black" }} href={testingComms}>
-              Testing
-            </a>
-          </h5>
-          {/* </Cell> */}
-          {/* <Cell className="col-1" col={1}></Cell> */}
-          {/* <Cell className="col-4" col={4}>
-              <div>
-                <img src={angiImage} alt="comms-email"></img>
-              </div>
-            </Cell> */}
-          {/* </Grid> */}
-        </div>
+        <section
+          style={{
+            width: "100%",
+            background:
+              "url(https://media-exp3.licdn.com/dms/image/C4D0BAQEgk8MjLI5aEg/company-logo_200_200/0/1625152505470?e=2159024400&v=beta&t=RyYmirSFjUR2jSsY7F1cqJQSqUNkFfmKO0rlzhwOz8w)",
+            margin: "auto",
+            opacity: "90%",
+          }}
+          className="newer-style"
+        >
+          <Container>
+            <Row>
+              <Col col={6}>
+                <div className="test">Snovapack</div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+
         <div className="page-container-div">
           <Grid>
             <Cell col={6}>
@@ -87,9 +83,30 @@ class Snova extends Component {
               <h5>TS Data Request Process</h5>
               <h5>Automation Ticket Process</h5>
             </Cell>
+            <Cell col={6}>
+              <h3>
+                <a style={{ color: "black" }} href="/snovapack_automation">
+                  mHelpDesk
+                </a>
+              </h3>
+              <h5>mHD Wep App</h5>
+              <h5>MV2</h5>
+              <h5>QuickBooks</h5>
+            </Cell>
+            <Cell col={6}>
+              <h3>
+                <a style={{ color: "black" }} href="/snovapack_processes">
+                  Business Management Tools (BMT)
+                </a>
+              </h3>
+              <h5>Procenter App</h5>
+              <h5>Offic App</h5>
+              <h5>Mobile App</h5>
+              <h5>QuickBooks Integration</h5>
+            </Cell>
           </Grid>
         </div>
-        <div className="page-container-div mhd-background">
+        {/* <div className="page-container-div mhd-background">
           <h3>mHelpDesk</h3>
           <Grid>
             <Cell col={4}>
@@ -143,7 +160,7 @@ class Snova extends Component {
               <h5>Sync Conflicts</h5>
             </Cell>
           </Grid>
-        </div>
+        </div> */}
       </div>
     );
   }

@@ -7,7 +7,15 @@ import { Button } from "react-mdl";
 // import TitleHeader from './Components/TitleHeader';
 import "./App.css";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Layout, Header, Textfield, Navigation, Drawer } from "react-mdl";
+import {
+  Layout,
+  Header,
+  Textfield,
+  Navigation,
+  Drawer,
+  Grid,
+  Cell,
+} from "react-mdl";
 import { Link } from "react-router-dom";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
@@ -72,8 +80,34 @@ class App extends Component {
   render() {
     return (
       <div style={{ height: "auto", position: "relative" }}>
+        <Grid
+          style={{
+            marginTop: "0%",
+            marginBottom: "-1%",
+            marginLeft: "10%",
+          }}
+        >
+          <Cell col={11}>
+            <div style={{}}>
+              <a href="/">
+                <img
+                  style={{ height: "25%", width: "25%" }}
+                  src="https://i.imgur.com/IH4zAoh.png"
+                  alt="qe_logo"
+                />
+              </a>
+            </div>
+          </Cell>
+          <Cell col={1}>
+            <Navbar>
+              <Nav>
+                <AmplifySignOut className="button-update" />
+              </Nav>
+            </Navbar>
+          </Cell>
+        </Grid>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Navbar.Brand href="/">QE Help Center</Navbar.Brand>
+          <Navbar.Brand href="/" style={{ marginLeft: "10%" }}></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
@@ -95,7 +129,7 @@ class App extends Component {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">IDE</NavDropdown.Item> */}
               </NavDropdown>
-              <NavDropdown title="Pages/App" id="collasible-nav-dropdown">
+              {/* <NavDropdown title="Pages/App" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
                   Member App
                 </NavDropdown.Item>
@@ -105,7 +139,7 @@ class App extends Component {
                 <NavDropdown.Item href="#action/3.3">
                   Visitor App
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
               <NavDropdown title="Squads" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/snovapack">Snovapack</NavDropdown.Item>
                 <NavDropdown.Item href="/crud">CRUD</NavDropdown.Item>
@@ -113,15 +147,17 @@ class App extends Component {
                   Shake N' Bake
                 </NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link href="/help">Help</Nav.Link>
             </Nav>
             <Nav>
-              <Button
+              {/* <Button
                 style={{
                   backgroundColor: "#f90",
                   height: "43px",
                   width: "153px",
                   padding: "1.50 rem",
                   marginRight: "2%",
+                  fontFamily: "National",
                 }}
                 href="/help"
                 raised
@@ -130,11 +166,14 @@ class App extends Component {
                 Help
               </Button>
 
-              <AmplifySignOut />
+              <AmplifySignOut /> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <Main />
+        <div style={{ fontFamily: "Arial" }}>
+          <Main />
+        </div>
+        <br />
       </div>
 
       // Layout from react-mdl

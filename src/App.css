@@ -1,3 +1,9 @@
+:root {
+  --amplify-primary-color: #ff5757;
+  --amplify-primary-tint: #ff7359;
+  --amplify-primary-shade: #e0573e;
+}
+
 .App {
   text-align: center;
 }
@@ -112,3 +118,15 @@ div.col-md-12 {
 /* .custom_header {
   background-color:#e31b23 !important;
 } */
+
+.button-update {
+  color: black;
+}
+
+.card-styling {
+  width: 75%;
+  margin: "auto";
+}
+
+.grid-styling {
+}

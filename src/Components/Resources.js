@@ -6,6 +6,8 @@ import PropTypes from "prop-types";
 //import { TabPanel } from "@material-ui/core";
 import "./Resources.css";
 import Automation from "./Automation";
+import { Container, Row, Col } from "react-bootstrap";
+import "./SquadPages.css";
 
 // Consts (Link Descriptions) //
 const selectACustomerLinkDesc = "Login and redirect to Select A Customer Page";
@@ -55,6 +57,24 @@ class Resources extends Component {
   render() {
     return (
       <div style={{ width: "100%", margin: "auto" }}>
+        <section
+          style={{
+            width: "100%",
+            background:
+              "url(https://www.phaedrasolutions.com/wp-content/uploads/2020/09/1-32.png) center / cover",
+            margin: "auto",
+            opacity: "90%",
+          }}
+          className="newer-style containter_img"
+        >
+          <Container>
+            <Row>
+              <Col col={6}>
+                <div className="test">Manual Testing</div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
         <Tabs
           defaultActiveKey="profile"
           id="uncontrolled-tab-example"

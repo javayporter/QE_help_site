@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { Grid, Cell, Button } from "react-mdl";
+import { Grid, Cell } from "react-mdl";
 import { Card, CardGroup } from "react-bootstrap";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "./LandingPage.css";
 import { ApplicationCard } from "./Tools";
+import { Container, Row, Col, Image, Button } from "react-bootstrap";
 
 // Consts //
 const welcome = "Welcome, ";
@@ -28,7 +29,7 @@ class VibesButton extends React.Component {
   render() {
     return (
       <div>
-        <h1>{this.state.message}</h1>
+        <h5>{this.state.message}</h5>
         <button onClick={this.handleClick}>Click to Decompress</button>
       </div>
     );
@@ -39,8 +40,24 @@ class VibesButton extends React.Component {
 class LandingPage extends Component {
   render() {
     return (
-      <div style={{ width: "100%" }}>
-        <Jumbotron className="spacing" style={{ height: "60%" }}>
+      <div
+        style={{
+          width: "100%",
+
+          // marginBottom: "-80%",
+          // paddingBottom: "19em",
+        }}
+      >
+        <Jumbotron
+          style={{
+            width: "100%",
+            background:
+              "url(https://www.denverpost.com/wp-content/uploads/2021/03/Angi-new-logo-and-app-screeen.jpg?w=1860) center / cover",
+            margin: "auto",
+            opacity: "90%",
+            marginBottom: "4em",
+          }}
+        >
           <Grid>
             <Cell col={6}>
               <h1>{welcome}</h1>
@@ -48,86 +65,28 @@ class LandingPage extends Component {
             </Cell>
           </Grid>
         </Jumbotron>
+        <Container style={{ textAlign: "center", alignContent: "center" }}>
+          <Row>
+            <div className="image-links">
+              <Col>
+                <Image
+                  className="image-sizing"
+                  src="https://i.pinimg.com/564x/23/e0/77/23e077fa30b6d3e85ecbfa433f969378.jpg"
+                  rounded
+                />
+                <Image
+                  className="image-sizing"
+                  src="https://i.pinimg.com/564x/23/e0/77/23e077fa30b6d3e85ecbfa433f969378.jpg"
+                  rounded
+                />
 
-        <CardGroup>
-          <Card>
-            <Card.Body>
-              <img
-                className="icon-link-images"
-                src="https://i.pinimg.com/564x/23/e0/77/23e077fa30b6d3e85ecbfa433f969378.jpg"
-                alt="rocketship-icon"
-                height="150"
-                width="150"
-              />
-              <Card.Title className="icon-link-text">
-                Getting Started
-              </Card.Title>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Body>
-              <a href="/automation">
-                <img
-                  className="icon-link-images"
-                  src="https://cdn.iconscout.com/icon/premium/png-512-thumb/software-testing-1084052.png"
-                  alt="testing-icon"
-                  height="150"
-                  width="150"
-                />
-              </a>
-              <Card.Title className="icon-link-text">
-                <a href="/automation">Testing</a>
-              </Card.Title>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Body>
-              <a href="/tools">
-                <img
-                  className="icon-link-images"
-                  src="https://banner2.cleanpng.com/20190307/yxz/kisspng-computer-icons-computer-software-scalable-vector-g-5c80de875c4575.272863441551949447378.jpg"
-                  alt="apps_tools-icon"
-                  height="150"
-                  width="150"
-                />
-              </a>
-              <Card.Title className="icon-link-text">
-                <a href="tools">Applications/Tools</a>
-              </Card.Title>
-            </Card.Body>
-          </Card>
-          {/* </CardGroup>
+                <h6 style={{ marginBottom: "4em" }}>Getting Started</h6>
+              </Col>
 
-        <CardGroup> */}
-          <Card>
-            <Card.Body>
-              <img
-                className="icon-link-images"
-                src="https://i.pinimg.com/564x/23/e0/77/23e077fa30b6d3e85ecbfa433f969378.jpg"
-                alt="rocketship-icon"
-                height="150"
-                width="150"
-              />
-              <Card.Title className="icon-link-text">Risk Maps</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Body>
-              <a href="/helpful">
-                <img
-                  className="icon-link-images"
-                  src="https://cdn3.iconfinder.com/data/icons/miscellaneous-28-solid/128/manage_transact_operate_organize_organise-512.png"
-                  alt="testing-icon"
-                  height="150"
-                  width="150"
-                />
-              </a>
-              <Card.Title className="icon-link-text">
-                <a href="/helpful">Daily Organizer</a>
-              </Card.Title>
-            </Card.Body>
-          </Card>
-        </CardGroup>
+              <VibesButton />
+            </div>
+          </Row>
+        </Container>
       </div>
     );
   }

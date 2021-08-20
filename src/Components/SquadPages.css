@@ -3,8 +3,8 @@
 }
 
 .main-page-div {
-  margin-top: 2%;
-  text-align: center;
+  /* margin-top: 2%; */
+  /* text-align: center; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -81,8 +81,49 @@ img {
 .section_styling {
   margin-top: 2%;
   margin-bottom: 2%;
+  font-family: "National", sans-serif;
+  font-style: "normal";
+  font-size: 190px;
 }
 
 .indent-text {
   text-indent: 2%;
 }
+
+.new-style {
+  width: "100%";
+  color: black;
+  height: 40em;
+}
+
+.newer-style {
+  width: "100%";
+  color: black;
+  height: 30em;
+}
+
+.test {
+  margin-top: 25%;
+  opacity: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.button-placement {
+  margin-top: 45%;
+  margin-left: 0%;
+}
+
+.cardstyling {
+  width: 110em;
+}
+
+.grid-styling {
+}
+
+/* .container_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
