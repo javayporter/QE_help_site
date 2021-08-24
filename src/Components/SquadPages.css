@@ -9,8 +9,8 @@
 }
 
 .page-container-div {
-  /* margin-left: 8.5%;
-  margin-right: 8.5%; */
+  margin-left: 15%;
+  margin-right: 15%;
   margin-bottom: 10%;
   background-color: #ebecf0;
 }
@@ -105,9 +105,9 @@ img {
 .test {
   margin-top: 25%;
   opacity: 100%;
-  color: white;
+  color: #343a40;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 38px;
 }
 
 .button-placement {

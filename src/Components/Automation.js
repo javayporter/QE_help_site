@@ -32,7 +32,12 @@ class Automation extends Component {
           <Container>
             <Row>
               <Col col={6}>
-                <div className="test">Automation</div>
+                <div
+                  className="test"
+                  style={{ color: "#6c757d", textAlign: "center" }}
+                >
+                  Automation
+                </div>
               </Col>
             </Row>
           </Container>

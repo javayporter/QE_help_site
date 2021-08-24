@@ -10,7 +10,7 @@ import { Container, Row, Col, Image, Button } from "react-bootstrap";
 const welcome = "Welcome, ";
 const welcomeUser = String(welcome) + "Javay,";
 const welcomeMessage =
-  "This is the QE Help Center! Here you'll find application setup guides, testing resources and much more. Click the icon to review the tool tips.";
+  "This is the QE Help Center! Here you'll find application setup guides, testing resources and much more.";
 
 // Components //
 class VibesButton extends React.Component {
@@ -59,31 +59,49 @@ class LandingPage extends Component {
           }}
         >
           <Grid>
-            <Cell col={6}>
-              <h1>{welcome}</h1>
-              <p className="welcome-text">{welcomeMessage}</p>
+            <Cell col={4} style={{ marginLeft: "-14em" }}>
+              {/* <h1>{welcome}</h1> */}
+              <br />
+              <br />
+              <br />
+              <p className="welcome-text" style={{ marginTop: "6em" }}>
+                {welcomeMessage}
+              </p>
             </Cell>
           </Grid>
         </Jumbotron>
+
         <Container style={{ textAlign: "center", alignContent: "center" }}>
           <Row>
             <div className="image-links">
               <Col>
-                <Image
-                  className="image-sizing"
-                  src="https://i.pinimg.com/564x/23/e0/77/23e077fa30b6d3e85ecbfa433f969378.jpg"
-                  rounded
-                />
-                <Image
-                  className="image-sizing"
-                  src="https://i.pinimg.com/564x/23/e0/77/23e077fa30b6d3e85ecbfa433f969378.jpg"
-                  rounded
-                />
+                <a
+                  href="https://angieslist.atlassian.net/wiki/spaces/SE/pages/731219056/Product+Development+Quality+Risk+Maps"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    alt="risk-maps"
+                    className="image-sizing"
+                    src="https://i.pinimg.com/564x/23/e0/77/23e077fa30b6d3e85ecbfa433f969378.jpg"
+                    rounded
+                  />
+                </a>
 
-                <h6 style={{ marginBottom: "4em" }}>Getting Started</h6>
+                <a
+                  href="https://angieslist.atlassian.net/wiki/spaces/SE/pages/1282146374/Automation+Tracking+-+High-Risk+Areas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className="image-sizing"
+                    src="https://i.pinimg.com/564x/23/e0/77/23e077fa30b6d3e85ecbfa433f969378.jpg"
+                    rounded
+                  />
+                </a>
               </Col>
 
-              <VibesButton />
+              {/* <VibesButton /> */}
             </div>
           </Row>
         </Container>

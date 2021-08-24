@@ -128,7 +128,12 @@ class SnovaPackProcesses extends Component {
           <Container>
             <Row>
               <Col col={6}>
-                <div className="test">Snovapack Processes</div>
+                <div
+                  className="test"
+                  style={{ color: "black", textAlign: "right" }}
+                >
+                  Snovapack Processes
+                </div>
               </Col>
               <Col col={6} className="button-placement">
                 <Button

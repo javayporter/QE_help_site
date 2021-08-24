@@ -3,6 +3,8 @@ import { Grid, Cell } from "react-mdl";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./SquadPages.css";
 
+const board_link =
+  "https://angieslist.atlassian.net/secure/RapidBoard.jspa?rapidView=470&projectKey=SAD";
 class ShakeNBake extends Component {
   render() {
     return (
@@ -20,14 +22,27 @@ class ShakeNBake extends Component {
           <Container>
             <Row>
               <Col col={6}>
-                <div className="test">Shake N' bake</div>
+                <div className="test">Shake And Bake</div>
               </Col>
             </Row>
           </Container>
         </section>
         <div className="page-container-div">
           <Grid>
-            <Cell col={6}>
+            <Cell col={12}>
+              <h4>
+                Jira Board Link:{" "}
+                <a
+                  href={board_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#ff5757" }}
+                >
+                  Click here.
+                </a>
+              </h4>
+            </Cell>
+            {/* <Cell col={6}>
               <h3>
                 <a style={{ color: "black" }} href="/snovapack_automation">
                   Automation
@@ -70,7 +85,7 @@ class ShakeNBake extends Component {
               <h5>Offic App</h5>
               <h5>Mobile App</h5>
               <h5>QuickBooks Integration</h5>
-            </Cell>
+            </Cell> */}
           </Grid>
         </div>
       </div>

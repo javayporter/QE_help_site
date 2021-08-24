@@ -70,7 +70,12 @@ class Resources extends Component {
           <Container>
             <Row>
               <Col col={6}>
-                <div className="test">Manual Testing</div>
+                <div
+                  className="test"
+                  style={{ color: "#6c757d", textAlign: "right" }}
+                >
+                  Manual Testing
+                </div>
               </Col>
             </Row>
           </Container>

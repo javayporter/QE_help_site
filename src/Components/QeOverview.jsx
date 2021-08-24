@@ -6,30 +6,37 @@ import "./SquadPages.css";
 class QeOverview extends Component {
   render() {
     return (
-      <div style={{ marginTop: "0%" }}>
+      <div>
         <section
           style={{
             width: "100%",
             background:
-              "url(https://www.fraserdove.com/wp-content/uploads/2019/09/Job_Description_Vs_Job_Ads.jpg) center / cover",
+              "url(https://getfullyfunded.com/wp-content/uploads/2019/10/Roles-and-Responbilities.jpeg) center / cover",
             margin: "auto",
             opacity: "80%",
           }}
           className="newer-style"
         >
-          <Container>
+          {/* <Container>
             <Row>
               <Col col={6}>
-                <div className="test" style={{ color: "#ff5757" }}>
+                <div
+                  className="test"
+                  style={{ color: "black", textAlign: "left" }}
+                >
                   Responsibilities
                 </div>
               </Col>
             </Row>
-          </Container>
+          </Container> */}
         </section>
 
         <section
-          style={{ marginRight: "10%", marginLeft: "10%", textAlign: "left" }}
+          style={{
+            marginRight: "15%",
+            marginLeft: "15%",
+            textAlign: "left",
+          }}
         >
           <h4>1. Assessing and improving Quality practices</h4> <br />
           <br />

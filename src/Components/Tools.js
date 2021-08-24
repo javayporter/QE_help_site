@@ -155,7 +155,9 @@ class Applications extends Component {
           <Container>
             <Row>
               <Col col={6}>
-                <div className="test">Tools/Applications</div>
+                <div className="test" style={{ color: "white" }}>
+                  Tools/Applications
+                </div>
               </Col>
             </Row>
           </Container>

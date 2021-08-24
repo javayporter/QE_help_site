@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import angiImage from "./comms_image.png";
 import { urlencoded } from "body-parser";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Badge } from "react-bootstrap";
 import "./SquadPages.css";
 const testingComms =
   "https://angieslist.atlassian.net/wiki/spaces/SNOVA/pages/2422276101/Testing+Comms+Tickets";
@@ -13,6 +13,8 @@ const commsEnvironments = [
   "QA: qa1-comm-engine",
   "PROD: comm-engine",
 ];
+const board_link =
+  "https://angieslist.atlassian.net/secure/RapidBoard.jspa?rapidView=633";
 
 const featureFlags = [
   "angi.pro.branding.account.enabled",
@@ -60,12 +62,25 @@ class Snova extends Component {
 
         <div className="page-container-div">
           <Grid>
+            <Cell col={12}>
+              <h4>
+                Jira Board Link:{" "}
+                <a
+                  href={board_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#ff5757" }}
+                >
+                  Click here.
+                </a>
+              </h4>
+            </Cell>
             <Cell col={6}>
-              <h3>
+              <h4>
                 <a style={{ color: "black" }} href="/snovapack_automation">
                   Automation
                 </a>
-              </h3>
+              </h4>
               <h5>Getting Started</h5>
               <h5>Shared Steps and Libraries</h5>
               <h5>Writing Tests</h5>
@@ -73,32 +88,38 @@ class Snova extends Component {
               <h5>Python Help Tips</h5>
             </Cell>
             <Cell col={6}>
-              <h3>
+              <h4>
                 <a style={{ color: "black" }} href="/snovapack_processes">
                   Processes
                 </a>
-              </h3>
+              </h4>
               <h5>Standard Ticketing Process</h5>
               <h5>PE Board Process</h5>
               <h5>TS Data Request Process</h5>
               <h5>Automation Ticket Process</h5>
             </Cell>
             <Cell col={6}>
-              <h3>
-                <a style={{ color: "black" }} href="/snovapack_automation">
-                  mHelpDesk
+              <h4>
+                <a style={{ color: "black" }} href="/coming_soon">
+                  mHelpDesk{" "}
+                  <Badge pill bg="secondary">
+                    Coming Soon!
+                  </Badge>
                 </a>
-              </h3>
+              </h4>
               <h5>mHD Wep App</h5>
               <h5>MV2</h5>
               <h5>QuickBooks</h5>
             </Cell>
             <Cell col={6}>
-              <h3>
-                <a style={{ color: "black" }} href="/snovapack_processes">
-                  Business Management Tools (BMT)
+              <h4>
+                <a style={{ color: "black" }} href="/coming_soon">
+                  Business Management Tools (BMT){" "}
+                  <Badge pill bg="secondary">
+                    Coming Soon!
+                  </Badge>
                 </a>
-              </h3>
+              </h4>
               <h5>Procenter App</h5>
               <h5>Offic App</h5>
               <h5>Mobile App</h5>
