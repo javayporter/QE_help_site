@@ -58,6 +58,367 @@ function Example() {
   );
 }
 
+function Example1() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Description
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Description of Application</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>BloomRPC!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+function Example3() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Description
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Description of Application</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Inspired by Postman and GraphQL Playground, BloomRPC aim to give the
+          simplest and efficient developer experience for exploring and querying
+          your GRPC services. BloomRPC is a tool in the gRPC Tools category of a
+          tech stack. BloomRPC is an open source tool.{" "}
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+function Example4() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Description
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Description of Application</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>BloomRPC!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
+function Example5() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Description
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Description of Application</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Postman is an API platform for building and using APIs. Postman
+          simplifies each step of the API lifecycle and streamlines
+          collaboration so you can create better APIs—faster.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
+function Example6() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Description
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Description of Application</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>BloomRPC!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
+function Example7() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Description
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Description of Application</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Azure Data Studio is a cross-platform database tool for data
+          professionals using on-premises and cloud data platforms on Windows,
+          macOS, and Linux. Azure Data Studio offers a modern editor experience
+          with IntelliSense, code snippets, source control integration, and an
+          integrated terminal. It's engineered with the data platform user in
+          mind, with built-in charting of query result sets and customizable
+          dashboards.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
+function Example8() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Description
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Description of Application</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          DBeaver is free and open source universal database tool for developers
+          and database administrators.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
+function Example9() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Description
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Description of Application</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>BloomRPC!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
+function Example10() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Description
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Description of Application</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Free Git GUI client!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
+function Example11() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Description
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Description of Application</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Appium is an open-source tool for automating native, mobile web, and
+          hybrid applications on iOS mobile, Android mobile, and Windows desktop
+          platforms. Native apps are those written using the iOS, Android, or
+          Windows SDKs. Mobile web apps are web apps accessed using a mobile
+          browser (Appium supports Safari on iOS and Chrome or the built-in
+          'Browser' app on Android). Hybrid apps have a wrapper around a
+          "webview" -- a native control that enables interaction with web
+          content. Projects like Apache Cordova make it easy to build apps using
+          web technologies that are then bundled into a native wrapper, creating
+          a hybrid app.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+function Example12() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Description
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Description of Application</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          BitBar is a mobile app testing platform which you can use to run
+          automated or manual tests on real iOS and Android devices and share
+          test projects between team members.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
 // Consts
 const app_desc = {
   descs: [
@@ -244,7 +605,7 @@ class Applications extends Component {
               </CardTitle>
               <CardText>
                 <div className="modal-background">
-                  <button>Description of application</button>
+                  <Example1 />
                 </div>
               </CardText>
               <CardActions border>
@@ -292,7 +653,7 @@ class Applications extends Component {
               </CardTitle>
               <CardText>
                 <div className="modal-background">
-                  <button>Description of application</button>
+                  <Example3 />
                 </div>
               </CardText>
               <CardActions border>
@@ -340,7 +701,7 @@ class Applications extends Component {
               </CardTitle>
               <CardText>
                 <div className="modal-background">
-                  <button>Description of application</button>
+                  <Example4 />
                 </div>
               </CardText>
               <CardActions border>
@@ -388,7 +749,7 @@ class Applications extends Component {
               </CardTitle>
               <CardText>
                 <div className="modal-background">
-                  <button>Description of application</button>
+                  <Example5 />
                 </div>
               </CardText>
               <CardActions border>
@@ -436,7 +797,7 @@ class Applications extends Component {
               </CardTitle>
               <CardText>
                 <div className="modal-background">
-                  <button>Description of application</button>
+                  <Example6 />
                 </div>
               </CardText>
               <CardActions border>
@@ -484,7 +845,7 @@ class Applications extends Component {
               </CardTitle>
               <CardText>
                 <div className="modal-background">
-                  <button>Description of application</button>
+                  <Example7 />
                 </div>
               </CardText>
               <CardActions border>
@@ -532,7 +893,7 @@ class Applications extends Component {
               </CardTitle>
               <CardText>
                 <div className="modal-background">
-                  <button>Description of application</button>
+                  <Example8 />
                 </div>
               </CardText>
               <CardActions border>
@@ -580,7 +941,7 @@ class Applications extends Component {
               </CardTitle>
               <CardText>
                 <div className="modal-background">
-                  <button>Description of application</button>
+                  <Example1 />
                 </div>
               </CardText>
               <CardActions border>
@@ -628,7 +989,7 @@ class Applications extends Component {
               </CardTitle>
               <CardText>
                 <div className="modal-background">
-                  <button>Description of application</button>
+                  <Example10 />
                 </div>
               </CardText>
               <CardActions border>
@@ -676,7 +1037,7 @@ class Applications extends Component {
               </CardTitle>
               <CardText>
                 <div className="modal-background">
-                  <button>Description of application</button>
+                  <Example11 />
                 </div>
               </CardText>
               <CardActions border>
@@ -724,7 +1085,7 @@ class Applications extends Component {
               </CardTitle>
               <CardText>
                 <div className="modal-background">
-                  <button>Description of application</button>
+                  <Example12 />
                 </div>
               </CardText>
               <CardActions border>
