@@ -21,6 +21,7 @@ import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 import { Auth } from "aws-amplify";
+
 // import Footer from './Components/Footer';
 
 class JNavbar extends React.Component {
@@ -88,7 +89,7 @@ class App extends Component {
           }}
         >
           <Cell col={11}>
-            <div style={{}}>
+            <div style={{ marginBottom: "1%" }}>
               <a href="/">
                 <img
                   style={{ height: "25%", width: "25%" }}

@@ -15,6 +15,7 @@ import Crud from "./Crud";
 import QeOverview from "./QeOverview";
 import SnovaPackProcesses from "./SnovapackProcesses";
 import SnovaPackAutomation from "./SnovapackAutomation";
+import HelpPage from "./Helpful";
 
 const Main = () => (
   <Switch>
@@ -32,6 +33,7 @@ const Main = () => (
     <Route path="/qe_overview" component={QeOverview} />
     <Route path="/snovapack_processes" component={SnovaPackProcesses} />
     <Route path="/snovapack_automation" component={SnovaPackAutomation} />
+    <Route path="/help" component={HelpPage} />
   </Switch>
 );
 

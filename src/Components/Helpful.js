@@ -219,3 +219,65 @@
 // // }
 
 // // export default Helpful;
+
+import React, { Component } from "react";
+import { Grid, Cell } from "react-mdl";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import "./SquadPages.css";
+import ReactPlayer from "react-player";
+
+const board_link =
+  "https://angieslist.atlassian.net/secure/RapidBoard.jspa?rapidView=428";
+class HelpPage extends Component {
+  render() {
+    return (
+      <div>
+        <section
+          style={{
+            width: "100%",
+            background:
+              "url(https://is4-ssl.mzstatic.com/image/thumb/Purple125/v4/94/3b/44/943b4407-5cfd-9922-8174-06708c747611/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png) center / cover",
+            margin: "auto",
+            opacity: "90%",
+          }}
+          className="newer-style"
+        >
+          <Container>
+            <Row>
+              <Col col={6}>
+                <div className="test"></div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <div className="page-container-div">
+          <Grid>
+            <Cell col={12}>
+              <h4>Walkthrough Video: </h4>
+              <p>
+                The video below is a walkthrough of the help center. If you need
+                asistance locating a page or would like to know about the site's
+                capabilities, this video will help.
+              </p>
+              <ReactPlayer url="https://vimeo.com/591724215" />
+            </Cell>
+
+            {/* <Cell col={6}>
+              <h4>
+                <a style={{ color: "black" }} href="/snovapack_processes">
+                  Business Management Tools (BMT)
+                </a>
+              </h4>
+              <h5>Procenter App</h5>
+              <h5>Offic App</h5>
+              <h5>Mobile App</h5>
+              <h5>QuickBooks Integration</h5>
+            </Cell> */}
+          </Grid>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default HelpPage;

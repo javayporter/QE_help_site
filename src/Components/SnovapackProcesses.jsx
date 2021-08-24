@@ -131,9 +131,7 @@ class SnovaPackProcesses extends Component {
                 <div
                   className="test"
                   style={{ color: "black", textAlign: "right" }}
-                >
-                  Snovapack Processes
-                </div>
+                ></div>
               </Col>
               <Col col={6} className="button-placement">
                 <Button
@@ -164,184 +162,186 @@ class SnovaPackProcesses extends Component {
             </Row>
           </Container>
         </section>
-        <Grid>
-          <Cell col={12} className="cell_styling">
-            <section className="section_styling">
-              <Card
-                shadow={0}
-                style={{
-                  width: "100%",
-                  // background:
-                  //   "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
-                  margin: "auto",
-                }}
-              >
-                <CardTitle
+        <div style={{ marginLeft: "12.5%", marginRight: "12.5%" }}>
+          <Grid>
+            <Cell col={12} className="cell_styling">
+              <section className="section_styling">
+                <Card
+                  shadow={0}
                   style={{
-                    color: "#000",
-                    //   height: "275px",
+                    width: "100%",
+                    // background:
+                    //   "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
+                    margin: "auto",
                   }}
-                  id="snovapack-standard-process"
                 >
-                  Standard Ticketing Process
-                </CardTitle>
-                <CardText>
-                  <div className="modal-background">
-                    <article>
-                      <div>
-                        <ListStandardTicketSteps
-                          standard_ticketing_steps={standard_ticketing_steps}
-                        />
-                      </div>
-                    </article>
-                  </div>
-                </CardText>
-              </Card>
-            </section>
-          </Cell>
-          <Cell col={12} className="cell_styling">
-            <section className="section_styling">
-              <Card shadow={0} style={{ width: "100%", margin: "auto" }}>
-                <CardTitle
-                  style={{
-                    color: "#000",
-                    //   height: "275px",
-                    //   background:
-                    //     "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
-                  }}
-                  id="snovapack-pe-process"
-                >
-                  PE Board Process
-                </CardTitle>
-                <CardText>
-                  <div className="modal-background">
-                    <article>
-                      <h5>Board Statuses (Relevant to Snovapack)</h5>
-                      <br />
-                      <div>
-                        <ol>
-                          <li>Acknowledged, Ready to Triage:</li>
-                          <ul>
-                            This is a holding pattern for tickets that need more
-                            information to be collected/tested by the TS rep who
-                            created the ticket. SNOVA does not touch these
-                            tickets.
-                          </ul>
-                          <li>Assigned, In Progress:</li>
-                          <ul>
-                            These are tickets that have all relevant information
-                            and are ready to SNOVA to handle. SNOVA QE reviews
-                            and verifies the ticket, then creates the
-                            corresponding SNOVA ticket and move the PE ticket to
-                            PE Backlog.
-                          </ul>
-                          <li>PE Backlog:</li>
-                          <ul>
-                            Holding pattern for PE tickets that have had the
-                            corresponding SNOVA ticket created. The PE ticket
-                            lives here until SNOVA completes the requested work.
-                            Once the requested work is completed, SNOVA dev
-                            moves the ticket to Resolved.
-                          </ul>
-                          <li>Resolved:</li>
-                          <ul>
-                            Once SNOVA dev completes the work for the ticket,
-                            they move the PE ticket to this status. This
-                            indicates to the TS rep that the work has been
-                            completed. TS rep will verify the fix, update the
-                            requesting SP, then close the PE ticket. The dev
-                            will also want to ping the TS rep on the PE ticket
-                            so that they are extra-aware that the ticket has
-                            been completed.
-                          </ul>
-                        </ol>
-                      </div>
-                      <h5>
-                        <a href={peBoardLink}>Board Link</a>
-                      </h5>{" "}
-                      <br />
-                      <h5>Process</h5>
-                      <br />
-                      <div>
-                        <ListPEProcessSteps
-                          pe_process_steps={pe_process_steps}
-                        />
-                      </div>
-                    </article>
-                  </div>
-                </CardText>
-              </Card>
-            </section>
-          </Cell>
-          <Cell col={12} className="cell_styling">
-            <section className="section_styling">
-              <Card shadow={0} style={{ width: "100%", margin: "auto" }}>
-                <CardTitle
-                  style={{
-                    color: "#000",
-                    //   height: "275px",
-                    //   background:
-                    //     "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
-                  }}
-                  id="ts_data-request-process"
-                >
-                  TS Data Request Process
-                </CardTitle>
-                <CardText>
-                  <div className="modal-background">
-                    <article>
-                      <h5>Background</h5>
-                      <br />
-                      <div className="indent-text">
-                        <ListBackgroundSteps steps={steps} />
-                      </div>
-                      <h5>Process</h5> <br />
-                      <div>
-                        <ListProcessSteps process_steps={process_steps} />
-                      </div>
-                      <h5>Last Steps (for Product Escalation)</h5>
-                      <br />
-                      <div>
-                        <ListPeSteps pe_steps={pe_steps} />
-                      </div>
-                      <h5>Files/Photos</h5>
-                      <br />
-                      <div>
-                        <ListFilesPhotosSteps
-                          files_photos_steps={files_photos_steps}
-                        />
-                      </div>
-                      "@dev Please update @QE and attach files/photo link when
-                      done"
-                    </article>
-                  </div>
-                </CardText>
-              </Card>
-            </section>
-          </Cell>
-          <Cell col={12} className="cell_styling">
-            <section className="section_styling">
-              <Card shadow={0} style={{ width: "100%", margin: "auto" }}>
-                <CardTitle
-                  style={{
-                    color: "#000",
-                    //   height: "275px",
-                    //   background:
-                    //     "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
-                  }}
-                  id="snovapack-automation-process"
-                >
-                  Automation Ticketing Process
-                </CardTitle>
-                <CardText>
-                  <div className="modal-background">
-                    <article>State Process Here</article>
-                  </div>
-                </CardText>
-              </Card>
-            </section>
-          </Cell>
-        </Grid>
+                  <CardTitle
+                    style={{
+                      color: "#000",
+                      //   height: "275px",
+                    }}
+                    id="snovapack-standard-process"
+                  >
+                    Standard Ticketing Process
+                  </CardTitle>
+                  <CardText>
+                    <div className="modal-background">
+                      <article>
+                        <div>
+                          <ListStandardTicketSteps
+                            standard_ticketing_steps={standard_ticketing_steps}
+                          />
+                        </div>
+                      </article>
+                    </div>
+                  </CardText>
+                </Card>
+              </section>
+            </Cell>
+            <Cell col={12} className="cell_styling">
+              <section className="section_styling">
+                <Card shadow={0} style={{ width: "100%", margin: "auto" }}>
+                  <CardTitle
+                    style={{
+                      color: "#000",
+                      //   height: "275px",
+                      //   background:
+                      //     "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
+                    }}
+                    id="snovapack-pe-process"
+                  >
+                    PE Board Process
+                  </CardTitle>
+                  <CardText>
+                    <div className="modal-background">
+                      <article>
+                        <h5>Board Statuses (Relevant to Snovapack)</h5>
+                        <br />
+                        <div>
+                          <ol>
+                            <li>Acknowledged, Ready to Triage:</li>
+                            <ul>
+                              This is a holding pattern for tickets that need
+                              more information to be collected/tested by the TS
+                              rep who created the ticket. SNOVA does not touch
+                              these tickets.
+                            </ul>
+                            <li>Assigned, In Progress:</li>
+                            <ul>
+                              These are tickets that have all relevant
+                              information and are ready to SNOVA to handle.
+                              SNOVA QE reviews and verifies the ticket, then
+                              creates the corresponding SNOVA ticket and move
+                              the PE ticket to PE Backlog.
+                            </ul>
+                            <li>PE Backlog:</li>
+                            <ul>
+                              Holding pattern for PE tickets that have had the
+                              corresponding SNOVA ticket created. The PE ticket
+                              lives here until SNOVA completes the requested
+                              work. Once the requested work is completed, SNOVA
+                              dev moves the ticket to Resolved.
+                            </ul>
+                            <li>Resolved:</li>
+                            <ul>
+                              Once SNOVA dev completes the work for the ticket,
+                              they move the PE ticket to this status. This
+                              indicates to the TS rep that the work has been
+                              completed. TS rep will verify the fix, update the
+                              requesting SP, then close the PE ticket. The dev
+                              will also want to ping the TS rep on the PE ticket
+                              so that they are extra-aware that the ticket has
+                              been completed.
+                            </ul>
+                          </ol>
+                        </div>
+                        <h5>
+                          <a href={peBoardLink}>Board Link</a>
+                        </h5>{" "}
+                        <br />
+                        <h5>Process</h5>
+                        <br />
+                        <div>
+                          <ListPEProcessSteps
+                            pe_process_steps={pe_process_steps}
+                          />
+                        </div>
+                      </article>
+                    </div>
+                  </CardText>
+                </Card>
+              </section>
+            </Cell>
+            <Cell col={12} className="cell_styling">
+              <section className="section_styling">
+                <Card shadow={0} style={{ width: "100%", margin: "auto" }}>
+                  <CardTitle
+                    style={{
+                      color: "#000",
+                      //   height: "275px",
+                      //   background:
+                      //     "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
+                    }}
+                    id="ts_data-request-process"
+                  >
+                    TS Data Request Process
+                  </CardTitle>
+                  <CardText>
+                    <div className="modal-background">
+                      <article>
+                        <h5>Background</h5>
+                        <br />
+                        <div className="indent-text">
+                          <ListBackgroundSteps steps={steps} />
+                        </div>
+                        <h5>Process</h5> <br />
+                        <div>
+                          <ListProcessSteps process_steps={process_steps} />
+                        </div>
+                        <h5>Last Steps (for Product Escalation)</h5>
+                        <br />
+                        <div>
+                          <ListPeSteps pe_steps={pe_steps} />
+                        </div>
+                        <h5>Files/Photos</h5>
+                        <br />
+                        <div>
+                          <ListFilesPhotosSteps
+                            files_photos_steps={files_photos_steps}
+                          />
+                        </div>
+                        "@dev Please update @QE and attach files/photo link when
+                        done"
+                      </article>
+                    </div>
+                  </CardText>
+                </Card>
+              </section>
+            </Cell>
+            <Cell col={12} className="cell_styling">
+              <section className="section_styling">
+                <Card shadow={0} style={{ width: "100%", margin: "auto" }}>
+                  <CardTitle
+                    style={{
+                      color: "#000",
+                      //   height: "275px",
+                      //   background:
+                      //     "url(https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png) center / cover",
+                    }}
+                    id="snovapack-automation-process"
+                  >
+                    Automation Ticketing Process
+                  </CardTitle>
+                  <CardText>
+                    <div className="modal-background">
+                      <article>State Process Here</article>
+                    </div>
+                  </CardText>
+                </Card>
+              </section>
+            </Cell>
+          </Grid>
+        </div>
       </div>
     );
   }

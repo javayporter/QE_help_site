@@ -81,10 +81,31 @@ class Resources extends Component {
           </Container>
         </section>
         <Tabs
-          defaultActiveKey="profile"
+          defaultActiveKey="home1"
           id="uncontrolled-tab-example"
           className="mb-3"
         >
+          <Tab eventKey="home1" title="Cycle">
+            {" "}
+            <section className="sec-text-box">
+              Requirement Analysis
+              <br />
+              <br />
+              Test Plan Creation
+              <br />
+              <br />
+              Test Case Creation
+              <br />
+              <br />
+              Test Case Execution
+              <br />
+              <br />
+              Defect Logging
+              <br />
+              <br />
+              Defect Fix and Re-verification
+            </section>
+          </Tab>
           <Tab eventKey="home" title="Testing the AC">
             {" "}
             <section className="sec-text-box">
