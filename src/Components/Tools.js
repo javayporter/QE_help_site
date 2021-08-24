@@ -74,7 +74,12 @@ function Example1() {
         <Modal.Header closeButton>
           <Modal.Title>Description of Application</Modal.Title>
         </Modal.Header>
-        <Modal.Body>BloomRPC!</Modal.Body>
+        <Modal.Body>
+          Inspired by Postman and GraphQL Playground, BloomRPC aim to give the
+          simplest and efficient developer experience for exploring and querying
+          your GRPC services. BloomRPC is a tool in the gRPC Tools category of a
+          tech stack. BloomRPC is an open source tool.
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
@@ -103,12 +108,7 @@ function Example3() {
         <Modal.Header closeButton>
           <Modal.Title>Description of Application</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          Inspired by Postman and GraphQL Playground, BloomRPC aim to give the
-          simplest and efficient developer experience for exploring and querying
-          your GRPC services. BloomRPC is a tool in the gRPC Tools category of a
-          tech stack. BloomRPC is an open source tool.{" "}
-        </Modal.Body>
+        <Modal.Body>SQL Tool. </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
