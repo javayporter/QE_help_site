@@ -155,9 +155,9 @@ class SnovaPackProcesses extends Component {
                 >
                   TS Data Requests
                 </Button>
-                <Button href="#snovapack-automation-process" variant="dark">
+                {/* <Button href="#snovapack-automation-process" variant="dark">
                   Automation
-                </Button>
+                </Button> */}
               </Col>
             </Row>
           </Container>
@@ -318,7 +318,7 @@ class SnovaPackProcesses extends Component {
                 </Card>
               </section>
             </Cell>
-            <Cell col={12} className="cell_styling">
+            {/* <Cell col={12} className="cell_styling">
               <section className="section_styling">
                 <Card shadow={0} style={{ width: "100%", margin: "auto" }}>
                   <CardTitle
@@ -339,7 +339,7 @@ class SnovaPackProcesses extends Component {
                   </CardText>
                 </Card>
               </section>
-            </Cell>
+            </Cell> */}
           </Grid>
         </div>
       </div>

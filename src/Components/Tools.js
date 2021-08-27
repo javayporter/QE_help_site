@@ -44,7 +44,14 @@ function Example() {
         <Modal.Header closeButton>
           <Modal.Title>Description of Application</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Insomnia is a GraphQL tool!</Modal.Body>
+        <Modal.Body>
+          Insomnia is a free cross-platform desktop application that takes the
+          pain out of interacting with and designing HTTP-based APIs. Insomnia
+          combines an easy-to-use interface with advanced functionality like
+          authentication helpers, code generation, and environment variables.
+          There is also the option to subscribe to an Insomnia paid plan to gain
+          access to encrypted data sync and team collaboration.{" "}
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
@@ -137,7 +144,12 @@ function Example4() {
         <Modal.Header closeButton>
           <Modal.Title>Description of Application</Modal.Title>
         </Modal.Header>
-        <Modal.Body>BloomRPC!</Modal.Body>
+        <Modal.Body>
+          Visual Studio Code is an integrated development environment made by
+          Microsoft for Windows, Linux and macOS. Features include support for
+          debugging, syntax highlighting, intelligent code completion, snippets,
+          code refactoring, and embedded Git.
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
@@ -201,7 +213,7 @@ function Example6() {
         <Modal.Header closeButton>
           <Modal.Title>Description of Application</Modal.Title>
         </Modal.Header>
-        <Modal.Body>BloomRPC!</Modal.Body>
+        <Modal.Body>IDE Tool!</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
@@ -302,7 +314,13 @@ function Example9() {
         <Modal.Header closeButton>
           <Modal.Title>Description of Application</Modal.Title>
         </Modal.Header>
-        <Modal.Body>BloomRPC!</Modal.Body>
+        <Modal.Body>
+          GitHub Desktop is an application that enables you to interact with
+          GitHub using a GUI instead of the command line or a web browser. ...
+          You can push to, pull from, and clone remote repositories with GitHub
+          Desktop, and use collaborative tools such as attributing commits and
+          creating pull requests.
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close

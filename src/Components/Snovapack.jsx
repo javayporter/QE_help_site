@@ -75,7 +75,7 @@ class Snova extends Component {
                 </a>
               </h4>
             </Cell>
-            <Cell col={6}>
+            {/* <Cell col={6}>
               <h4>
                 <a style={{ color: "black" }} href="/snovapack_automation">
                   Automation
@@ -86,7 +86,7 @@ class Snova extends Component {
               <h5>Writing Tests</h5>
               <h5>Running Tests</h5>
               <h5>Python Help Tips</h5>
-            </Cell>
+            </Cell> */}
             <Cell col={6}>
               <h4>
                 <a style={{ color: "black" }} href="/snovapack_processes">
@@ -96,9 +96,9 @@ class Snova extends Component {
               <h5>Standard Ticketing Process</h5>
               <h5>PE Board Process</h5>
               <h5>TS Data Request Process</h5>
-              <h5>Automation Ticket Process</h5>
+              {/* <h5>Automation Ticket Process</h5> */}
             </Cell>
-            <Cell col={6}>
+            {/* <Cell col={6}>
               <h4>
                 <a style={{ color: "black" }} href="/coming_soon">
                   mHelpDesk{" "}
@@ -124,7 +124,7 @@ class Snova extends Component {
               <h5>Offic App</h5>
               <h5>Mobile App</h5>
               <h5>QuickBooks Integration</h5>
-            </Cell>
+            </Cell> */}
           </Grid>
         </div>
         {/* <div className="page-container-div mhd-background">
