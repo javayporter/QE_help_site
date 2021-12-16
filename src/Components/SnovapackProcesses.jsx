@@ -67,6 +67,7 @@ const steps = [
 
 const process_steps = [
   "Ticket is assigned to QE ",
+  "This update is for demo purposes only.",
   "QE moves ticket to In Progress when ready to begin work",
   "Data extractions are done (See Data Extractions page for details) ",
   "QE updates the PE ticket linked to the Data Request ticket ",
